@@ -2,16 +2,29 @@
 
 actor Alice #green
 
-' comment this is
+' a comment this is
 
 participant Bob
 participant "Mr funky foo" as M #334455
+
+ref over Alice, Bob: init
 
 Alice --> Bob: Authenticaion Request
 Bob   --> Alice: Successful auth
 Bob   --> M: Alice is on
 M     --> Alice: Hello Alice, I am M
-Alice --> Alice: I say hello\nTo myself\nSometimes...
-Alice --> M: Pleased to meet you\nAbout Bob...
+...time passes...
+Alice --> Alice: Say, is it breezy?
+activate Alice
+deactivate Bob
+||22||
+Alice --> M: Pleased to meet you,\nNow about Bob...
+||22||
+destroy Alice
+Bob --> M: Woops, Alice was destroyed
+activate M
+M ->]: << createSomeFoo >>
+M <--]: DidMakeSomeFoo
+deactivate M
 
 @enduml
