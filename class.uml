@@ -1,10 +1,10 @@
 @startuml
 
-class Foo <<bar>> {
+class Foo <<Bar>> {
     You can use
     several lines
     ..
-    as you want
+    As you want
     and group
     ==
     things together.
@@ -29,6 +29,16 @@ class Bar {
     String password
 }
 
+interface IBar {
+    int a
+    int b
+    --
+    +public()
+    -private()
+}
+
 Foo --> Bar
+IBar --> Foo
+IBar --> Bar
 
 @enduml
