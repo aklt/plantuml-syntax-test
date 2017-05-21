@@ -1,0 +1,34 @@
+@startuml
+
+class Foo <<bar>> {
+    You can use
+    several lines
+    ..
+    as you want
+    and group
+    ==
+    things together.
+    --
+    You can have as many
+    groups as you want.
+    --
+    +publicMethod()
+    -privateMethod()
+    #protectedMethod()
+    End of class
+}
+
+class Bar { 
+    note: This is a class
+    .. Hello foo ..
+    +public
+    .. Private things prefixed with - ..
+    -private
+    #protected
+    int foo
+    String password
+}
+
+Foo --> Bar
+
+@enduml

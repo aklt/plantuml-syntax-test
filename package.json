@@ -1,0 +1,27 @@
+{
+  "name": "plantuml-syntax-test",
+  "version": "0.0.1",
+  "description": "Test cases for plantuml-syntax vim plugin",
+  "main": "index.js",
+  "scripts": {
+    "dev": "freshen"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aklt/plantuml-syntax-test.git"
+  },
+  "keywords": [
+    "vim",
+    "syntax",
+    "plantuml"
+  ],
+  "author": "Anders Thøgersen",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/aklt/plantuml-syntax-test/issues"
+  },
+  "homepage": "https://github.com/aklt/plantuml-syntax-test#readme",
+  "dependencies": {
+    "freshen": "^0.6.0"
+  }
+}

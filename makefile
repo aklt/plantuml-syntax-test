@@ -4,7 +4,7 @@ PNG=$(patsubst %.uml, %.png, $(UML))
 PRE=$(patsubst %.uml, %.pre.html, $(UML))
 CSS=$(patsubst %.uml, %.syntax.css, $(UML))
 
-all: style.css index.html
+all: style.css index.html $(PNG)
 
 style.css: $(CSS)
 	cat $< | sort | uniq > $@
@@ -12,13 +12,16 @@ style.css: $(CSS)
 index.html: index.sh $(PRE)
 	./index.sh $(PRE) > $@
 
+%.pre.html %.syntax.css: %.uml
+	./tohtml.sh $< $$(basename $< .uml)
+
 .PHONY: dev clean
 
 dev:
-	freshen
+	npm run dev
 
 clean:
-	rm -f $(PNG) $(PRE) $(CSS)
+	rm -f $(PNG) $(PRE) $(CSS) index.html style.css
 
 %.png: %.uml
 	plantuml -tpng $<

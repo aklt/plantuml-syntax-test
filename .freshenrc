@@ -18,7 +18,7 @@ report:
 # The value of `deps` can be a string of suffix names or an Array of RegExps
 build:
   command: 'make'
-  deps: 'uml'
+  deps: 'uml sh'
 
 # Where to access server
 url: 'http://localhost:1024'
