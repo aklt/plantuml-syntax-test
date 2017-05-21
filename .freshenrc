@@ -1,0 +1,66 @@
+# Example of a .freshenrc configuration file
+#
+# Place a file like this in the root of the directory you wish freshen to serve
+
+# All directories below the directory that freshen is started in will be
+# watched. Use this option to set a regular expression matching directories that
+# should not be watched.  Note that the root dir will always be included.
+# exclude: /__foo/
+
+# Files to reload in the browser when they change. The value of `change` should
+# be either a string of suffix names separated by whitespace or an array of
+# regular expressions.
+report:
+  change: 'style.css index.html'
+
+# Run command each time a file matching one of the suffixes or regular
+# expressions in deps changes.
+# The value of `deps` can be a string of suffix names or an Array of RegExps
+build:
+  command: 'make'
+  deps: 'uml'
+
+# Where to access server
+url: 'http://localhost:1024'
+
+# # http proxy - note that this requires http-proxy to be installed so that
+# # freshen can require it
+# ############
+# proxy:
+#   # If a request matches this url
+#   from:  '^/api/(.*)$'
+#   # rewite it to this url and send it returning the result
+#   to:    'http://localhost:8080/${1}'
+#   # retry this amount of times before bailing
+#   retry: 20
+
+# Defaulted config values that can be overridden
+################################################
+
+# # Send at most 1 message to browsers in this amount of milliseconds This is
+# # useful to avoid sending a lot of seperate requests to load files to browsers
+# # when the build process changes many files
+# delay: 150
+
+# # Should terminal logging be in color?
+# color: true
+
+# # The whole page is loaded when change is reported. Set the following to true
+# # to attempt to hot load only the changed resource
+# load:
+#   js: true
+#   css: true
+#   png: true
+
+# # Supply a custom mimetypes file
+# mimeTypesFile: "mime.types"
+
+# # Merge additional mime types that files can be served with
+# mimeAdd:
+#   php: 'text/html'
+
+# # How many retries the client attempts before giving up
+# retries: 20
+
+# # Help debugging
+# debug: true
