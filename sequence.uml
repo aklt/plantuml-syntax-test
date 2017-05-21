@@ -1,4 +1,5 @@
 @startuml
+== Initialize ==
 Alice->Bob : hello
 note left: this is a first note
 Bob->Alice : ok
@@ -9,6 +10,7 @@ a note
 can also be defined
 on several lines
 end note
+== Repeat ==
 Alice -> Bob: message 1
 Bob --> Alice: ok
 |||
@@ -17,7 +19,7 @@ Bob --> Alice: ok
 ||45||
 Alice -> Bob: message 3
 Bob --> Alice: ok
-note left: Funky arrows
+== Get Funky ==
 Bob -->x Alice
 Bob -->> Alice
 Bob --\ Alice
@@ -25,4 +27,5 @@ Bob \\-- Alice
 Bob -->o Alice
 Bob <-->o Alice
 Bob <--> Alice
+note right: These are\nthe Funky arrows,\nYes,...
 @enduml
