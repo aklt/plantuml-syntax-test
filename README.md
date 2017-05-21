@@ -5,8 +5,9 @@ vim plugin.
 
 To use it run:
 
-    # npm install
-    # make dev
+    git submodule update --init
+    npm install
+    make dev
 
 point your browser to
 
