@@ -7,7 +7,7 @@ CSS=$(patsubst %.uml, %.syntax.css, $(UML))
 all: style.css index.html $(PNG)
 
 style.css: $(CSS)
-	cat $< | sort | uniq > $@
+	cat $(CSS) | sort | uniq > $@
 
 index.html: index.sh $(PRE)
 	./index.sh $(PRE) > $@
