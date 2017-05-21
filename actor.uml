@@ -1,0 +1,17 @@
+@startuml
+
+actor Alice #green
+
+' comment this is
+
+participant Bob
+participant "Mr funky foo" as M #334455
+
+Alice --> Bob: Authenticaion Request
+Bob   --> Alice: Successful auth
+Bob   --> M: Alice is on
+M     --> Alice: Hello Alice, I am M
+Alice --> Alice: I say hello\nTo myself\nSometimes...
+Alice --> M: Pleased to meet you\nAbout Bob...
+
+@enduml

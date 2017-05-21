@@ -17,4 +17,12 @@ Bob --> Alice: ok
 ||45||
 Alice -> Bob: message 3
 Bob --> Alice: ok
+note left: Funky arrows
+Bob -->x Alice
+Bob -->> Alice
+Bob --\ Alice
+Bob \\-- Alice
+Bob -->o Alice
+Bob <-->o Alice
+Bob <--> Alice
 @enduml
