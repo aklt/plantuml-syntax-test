@@ -6,10 +6,10 @@ CSS=$(patsubst %.uml, %.syntax.css, $(UML))
 
 all: style.css index.html $(PNG)
 
-style.css: $(CSS)
+style.css: $(CSS) $(UML)
 	cat $(CSS) | sort | uniq > $@
 
-index.html: index.sh $(PRE)
+index.html: index.sh $(PRE) $(UML)
 	./index.sh $(PRE) > $@
 
 %.pre.html %.syntax.css: %.uml
