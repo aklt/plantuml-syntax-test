@@ -1,0 +1,5 @@
+*.html
+*.css
+*.png
+node_modules
+
