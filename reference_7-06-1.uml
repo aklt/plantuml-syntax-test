@@ -1,3 +1,4 @@
+@startuml
 [*] --> Active
 Active --> Inactive
 note left of Active : this is a short\nnote
