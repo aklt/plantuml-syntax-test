@@ -1,11 +1,38 @@
 @startwbs
-+ New Job
-++ Decide on Job Requirements
-+++ Identity gaps
-+++ Review JDs
-++++ Sign-Up for courses
+
+class ThisFoo <<Bar>> {
+ +red
+ +blue
+ -green
+ #foo
+}
+
+
+
+* New Job
+ + Decide on Job Requirements
+  +_ Identity gaps
+   +_ Review JDs
+    +_ Review JDs
+     -_ Eggs
+      * Dawn
+       +
+        +
+         +
+          +
+           +
+            *
+
+
+*
+++ Foo
++++ Bares
+++ Goo
+++ Hats
+
+++++_ Sign-Up for courses
 ++++ Volunteer
-++++ Reading
+++++ Reading<&foo>
 ++- Checklist
 +++- Responsibilities
 +++- Location
