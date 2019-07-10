@@ -4,7 +4,10 @@
 # Configure colorscheme and where to source plantuml-syntax/syntax/plantuml.vim
 # from 
 #
-colors="\$VIMRUNTIME/colors/default.vim"
+colors="$HOMEDIR/vim/akltvim/pack/themes/opt/seoul256.vim/colors/seoul256-light.vim"
+
+# colors="\$VIMRUNTIME/"
+# colors="\$VIMRUNTIME/colors/default.vim"
 # colors="${HOME}/.vim/bundle/gruvbox/colors/gruvbox.vim"
 # colors="${HOME}/.vim/bundle/papercolor-theme/colors/PaperColor.vim"
 plantumlSyntax="./plantuml-syntax/syntax/plantuml.vim"
