@@ -35,7 +35,7 @@ vim --noplugin -u NONE \
   -c ":set bg=light" \
   -c ":source ${colors} | :source ${plantumlSyntax}" \
   -c ":let g:loaded_2html_plugin = 0" \
-  -c ":source /usr/share/vim/vim80/syntax/2html.vim" \
+  -c ":source /usr/share/vim/vim81/syntax/2html.vim" \
   -c ":w! ${tmpFile}" \
   -c "qa!"
 
