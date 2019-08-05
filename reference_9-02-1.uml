@@ -5,6 +5,7 @@ concise "Web User" as WU
 WU is Idle
 WB is Idle
 @100
+WU -> WB : URL
 WU is Waiting
 WB is Processing
 @300

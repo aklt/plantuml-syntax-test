@@ -1,4 +1,11 @@
 @startuml
+Title this is my title
+header: some header
+footer: some footer
+legend
+Some legend
+end legend
+caption some caption
 robust "Web Browser" as WB
 concise "Web User" as WU
 @0
