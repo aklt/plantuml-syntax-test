@@ -26,6 +26,17 @@ esac
 echo "ft ${ft}"
 
 tmpFile=$(mktemp /tmp/tohtml-sh.XXXX)
+toHtml="$VIM_TO_HTML"
+if ! [ -e "$toHtml" ]; then
+  toHtml="$HOME/install/share/vim/vim81/syntax/2html.vim"
+fi
+if ! [ -e "$toHtml" ]; then
+  toHtml="/usr/share/vim/vim81/syntax/2html.vim"
+fi
+if ! [ -e "$toHtml" ]; then
+  echo "Cannot find 2html.vim script, set VIM_TO_HTML variable"
+  exit 1
+fi
 
 vim --noplugin -u NONE \
   -c ":set nocp" \
@@ -35,7 +46,7 @@ vim --noplugin -u NONE \
   -c ":set bg=light" \
   -c ":source ${colors} | :source ${plantumlSyntax}" \
   -c ":let g:loaded_2html_plugin = 0" \
-  -c ":source /usr/share/vim/vim81/syntax/2html.vim" \
+  -c ":source $toHtml" \
   -c ":w! ${tmpFile}" \
   -c "qa!"
 
