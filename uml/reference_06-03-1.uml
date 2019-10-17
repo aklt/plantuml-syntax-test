@@ -1,0 +1,4 @@
+@startuml
+DataAccess - [First Component]
+[First Component] ..> HTTP : use
+@enduml

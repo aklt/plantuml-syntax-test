@@ -1,4 +1,0 @@
-@startuml
-Interface1 <-- [Component]
-Interface2 <- [Component]
-@enduml
