@@ -25,7 +25,6 @@ esac
 
 echo "ft ${ft}"
 
-tmpFile=$(mktemp /tmp/tohtml-sh.XXXX)
 toHtml="$VIM_TO_HTML"
 if ! [ -e "$toHtml" ]; then
   toHtml="$HOME/install/share/vim/vim81/syntax/2html.vim"
@@ -37,6 +36,8 @@ if ! [ -e "$toHtml" ]; then
   echo "Cannot find 2html.vim script, set VIM_TO_HTML variable"
   exit 1
 fi
+
+tmpFile=$(mktemp /tmp/tohtml-sh.XXXX)
 
 vim --noplugin -u NONE \
   -c ":set nocp" \

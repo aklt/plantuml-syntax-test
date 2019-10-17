@@ -7,6 +7,7 @@ To use it run:
 
     git submodule update --init
     npm install
+    make
     make dev
 
 point your browser to
