@@ -7,8 +7,8 @@ CSS=$(patsubst %.uml, %.syntax.css, $(UML))
 info:
 	@echo "Warning: The screen will blink a lot!"
 	@echo "Press Enter to continue, CTRL-c to stop"
-	mkdir -p build
-	read USER_INPUT
+	@mkdir -p build
+	@read USER_INPUT
 	$(MAKE) -C . all
 
 all: style.css index.html $(PNG)
