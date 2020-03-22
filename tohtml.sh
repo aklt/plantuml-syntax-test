@@ -27,6 +27,12 @@ echo "ft ${ft}"
 
 toHtml="$VIM_TO_HTML"
 if ! [ -e "$toHtml" ]; then
+  toHtml="$HOME/install/share/vim/vim82/syntax/2html.vim"
+fi
+if ! [ -e "$toHtml" ]; then
+  toHtml="/usr/share/vim/vim82/syntax/2html.vim"
+fi
+if ! [ -e "$toHtml" ]; then
   toHtml="$HOME/install/share/vim/vim81/syntax/2html.vim"
 fi
 if ! [ -e "$toHtml" ]; then
