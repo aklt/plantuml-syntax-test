@@ -16,4 +16,6 @@ point your browser to
 
 and start editing uml files.
 
-Also, see the [PlantUML Language Reference](http://plantuml.com/PlantUML_Language_Reference_Guide.pdf).
+See examples here [Plantuml Syntax](https://aklt.github.io/plantuml/).
+
+Also, see the [PlantUML Language Reference Guide](http://plantuml.com/PlantUML_Language_Reference_Guide.pdf).
