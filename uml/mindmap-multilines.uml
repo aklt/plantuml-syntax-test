@@ -1,0 +1,10 @@
+@startmindmap
+* foo
+**:multi
+line;
+**_:multiline
+without box;
+***[#red] inline color
+***[#blue]_ inline color without box
+@endmindmap
+
