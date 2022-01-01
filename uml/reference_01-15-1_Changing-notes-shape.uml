@@ -6,4 +6,14 @@ rnote over server
 "r" as rectangle
 "h" as hexagon
 endrnote
+rnote over server
+this is
+on several
+lines
+endrnote
+hnote over caller
+this is
+on several
+lines
+endhnote
 @enduml

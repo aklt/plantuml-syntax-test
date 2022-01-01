@@ -1,5 +1,5 @@
 @startuml
-skinparam sequenceArrowThickness 3
+skinparam sequenceArrowThickness 2
 skinparam roundcorner 20
 skinparam maxmessagesize 60
 skinparam sequenceParticipant underline
