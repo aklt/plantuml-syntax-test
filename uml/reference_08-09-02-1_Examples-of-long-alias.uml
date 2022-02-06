@@ -1,0 +1,26 @@
+@startuml
+actor       "actor"       as actorVeryLOOOOOOOOOOOOOOOOOOOg
+agent       "agent"       as agentVeryLOOOOOOOOOOOOOOOOOOOg
+artifact    "artifact"    as artifactVeryLOOOOOOOOOOOOOOOOOOOg
+boundary    "boundary"    as boundaryVeryLOOOOOOOOOOOOOOOOOOOg
+card        "card"        as cardVeryLOOOOOOOOOOOOOOOOOOOg
+cloud       "cloud"       as cloudVeryLOOOOOOOOOOOOOOOOOOOg
+collections "collections" as collectionsVeryLOOOOOOOOOOOOOOOOOOOg
+component   "component"   as componentVeryLOOOOOOOOOOOOOOOOOOOg
+control     "control"     as controlVeryLOOOOOOOOOOOOOOOOOOOg
+database    "database"    as databaseVeryLOOOOOOOOOOOOOOOOOOOg
+entity      "entity"      as entityVeryLOOOOOOOOOOOOOOOOOOOg
+file        "file"        as fileVeryLOOOOOOOOOOOOOOOOOOOg
+folder      "folder"      as folderVeryLOOOOOOOOOOOOOOOOOOOg
+frame       "frame"       as frameVeryLOOOOOOOOOOOOOOOOOOOg
+hexagon     "hexagon"     as hexagonVeryLOOOOOOOOOOOOOOOOOOOg
+interface   "interface"   as interfaceVeryLOOOOOOOOOOOOOOOOOOOg
+label       "label"       as labelVeryLOOOOOOOOOOOOOOOOOOOg
+node        "node"        as nodeVeryLOOOOOOOOOOOOOOOOOOOg
+package     "package"     as packageVeryLOOOOOOOOOOOOOOOOOOOg
+queue       "queue"       as queueVeryLOOOOOOOOOOOOOOOOOOOg
+stack       "stack"       as stackVeryLOOOOOOOOOOOOOOOOOOOg
+rectangle   "rectangle"   as rectangleVeryLOOOOOOOOOOOOOOOOOOOg
+storage     "storage"     as storageVeryLOOOOOOOOOOOOOOOOOOOg
+usecase     "usecase"     as usecaseVeryLOOOOOOOOOOOOOOOOOOOg
+@enduml
