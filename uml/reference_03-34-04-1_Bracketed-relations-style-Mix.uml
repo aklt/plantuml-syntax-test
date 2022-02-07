@@ -8,7 +8,7 @@ bar3 : [#green,dashed,thickness=4]
 bar4 : [#blue,dotted,thickness=8]
 bar5 : [#blue,plain,thickness=16]
 
-foo --> bar                             : ?
+foo --> bar                             : ∅
 foo -[#red,thickness=1]-> bar1          : [#red,1]
 foo -[#red,dashed,thickness=2]-> bar2   : [#red,dashed,2]
 foo -[#green,dashed,thickness=4]-> bar3 : [#green,dashed,4]
