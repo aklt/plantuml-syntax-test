@@ -7,7 +7,7 @@
 colors="\$VIMRUNTIME/colors/default.vim"
 # colors="${HOME}/.vim/bundle/gruvbox/colors/gruvbox.vim"
 # colors="${HOME}/.vim/bundle/papercolor-theme/colors/PaperColor.vim"
-plantumlSyntax="./plantuml-syntax/syntax/plantuml.vim"
+tools="tohtml.vim"
 
 if [ -z "$1" ] || [ -z "$2" ]; then
   echo "Usage: vimtohtml.sh <inputFile> <out>"
@@ -45,16 +45,14 @@ fi
 
 tmpFile=$(mktemp /tmp/tohtml-sh.XXXX)
 
+PACKPATH="`pwd`/vim"
+
 vim --noplugin -u NONE \
-  -c ":set nocp" \
-  -c ":syntax on" \
-  -c ":r $1" \
-  -c ":set ft=${ft}" \
-  -c ":set bg=light" \
-  -c ":source ${colors} | :source ${plantumlSyntax}" \
+  -c ":source ${tools} | :source ${colors}" \
+  -c ":call IndentPlantUML('$1', '${ft}')" \
   -c ":let g:loaded_2html_plugin = 0" \
   -c ":source $toHtml" \
-  -c ":w! ${tmpFile}" \
+  -c ":w! ${tmpFile}"  \
   -c "qa!"
 
 sed -rn '/^<pre/, /^<\/pre/ p' "${tmpFile}" > "${2}.pre.html"
