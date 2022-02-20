@@ -1,8 +1,11 @@
 
 UML=$(wildcard uml/*.uml)
 PNG=$(patsubst %.uml, %.png, $(UML))
+#SVG=$(patsubst %.uml, %.svg, $(UML))
 PRE=$(patsubst %.uml, %.pre.html, $(UML))
 CSS=$(patsubst %.uml, %.syntax.css, $(UML))
+
+.PHONY: all build dev install clean
 
 info:
 	@echo "Warning: The screen will blink a lot!"
@@ -11,7 +14,9 @@ info:
 	@read USER_INPUT
 	$(MAKE) -C . all
 
-all: style.css index.html $(PNG)
+all: build
+
+build: style.css index.html $(PNG) $(SVG)
 
 style.css: $(CSS) $(UML)
 	cat $(CSS) | sort | uniq > $@
@@ -22,16 +27,18 @@ index.html: index.sh $(PRE) $(UML)
 %.pre.html %.syntax.css: %.uml
 	./tohtml.sh $< uml/$$(basename $< .uml)
 
-.PHONY: dev clean uml
-
 dev:
 	npm run dev
+
+install:
+	git submodule update --init --recursive
+	npm install
 
 clean:
 	rm -f $(PNG) $(PRE) $(CSS) index.html style.css
 
-# %.png: %.uml
-# 	cat $< | plantuml -tpng -p > "$$(basename '$<').png"
-
 %.png: %.uml
 	plantuml -tpng $<
+
+%.svg: %.uml
+	plantuml -tsvg $<
