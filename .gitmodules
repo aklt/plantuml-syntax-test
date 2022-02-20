@@ -1,3 +1,3 @@
 [submodule "plantuml-syntax"]
-	path = plantuml-syntax
+	path = vim/pack/test/opt/plantuml-syntax
 	url = https://github.com/aklt/plantuml-syntax.git
