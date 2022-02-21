@@ -1,7 +1,7 @@
 
 UML=$(wildcard uml/*.uml)
 PNG=$(patsubst %.uml, %.png, $(UML))
-#SVG=$(patsubst %.uml, %.svg, $(UML))
+SVG=$(patsubst %.uml, %.svg, $(UML))
 PRE=$(patsubst %.uml, %.pre.html, $(UML))
 CSS=$(patsubst %.uml, %.syntax.css, $(UML))
 
@@ -16,7 +16,7 @@ info:
 
 all: build
 
-build: style.css index.html $(PNG) $(SVG)
+build: style.css index.html $(PNG)
 
 style.css: $(CSS) $(UML)
 	cat $(CSS) | sort | uniq > $@
@@ -35,7 +35,7 @@ install:
 	npm install
 
 clean:
-	rm -f $(PNG) $(PRE) $(CSS) index.html style.css
+	rm -f $(PNG) $(SVG) $(PRE) $(CSS) index.html style.css
 
 %.png: %.uml
 	plantuml -tpng $<
