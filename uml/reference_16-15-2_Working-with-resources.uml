@@ -1,0 +1,3 @@
+@startgantt
+[Task1] on {Alice} {Bob} lasts 20 days
+@endgantt

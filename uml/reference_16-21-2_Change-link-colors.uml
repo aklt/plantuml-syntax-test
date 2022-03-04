@@ -1,0 +1,15 @@
+@startuml
+<style>
+ganttDiagram {
+	arrow {
+		LineColor blue
+	}
+}
+</style>
+[Prototype design] lasts 7 days
+[Build prototype] lasts 4 days
+[Prepare test] lasts 6 days
+[Prototype design] -[#FF00FF]-> [Build prototype]
+[Prototype design] -[dotted]-> [Prepare test]
+Then [Run test]  lasts 4 days
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+skinparam sequenceMessageAlign direction
+Alice -> Bob : Hi
+Bob -> Alice: Hi
+@enduml
+

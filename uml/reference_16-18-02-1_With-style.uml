@@ -1,0 +1,59 @@
+@startuml
+<style>
+ganttDiagram {
+task {
+FontName Helvetica
+FontColor red
+FontSize 18
+PlantUML Language Reference Guide (1.2021.2)
+268 / 415
+16.18
+Using style
+16
+GANTT DIAGRAM
+FontStyle bold
+BackGroundColor GreenYellow
+LineColor blue
+}
+milestone {
+FontColor blue
+FontSize 25
+FontStyle italic
+BackGroundColor yellow
+LineColor red
+}
+note {
+FontColor DarkGreen
+FontSize 10
+LineColor OrangeRed
+}
+arrow {
+FontName Helvetica
+FontColor red
+FontSize 18
+FontStyle bold
+BackGroundColor GreenYellow
+LineColor blue
+}
+separator {
+LineColor red
+BackGroundColor green
+FontSize 16
+FontStyle bold
+FontColor purple
+}
+}
+</style>
+[Task1] lasts 20 days
+note bottom
+memo1 ...
+memo2 ...
+explanations1 ...
+explanations2 ...
+end note
+[Task2] lasts 4 days
+[Task1] -> [Task2]
+-- Separator title --
+[M1] happens on 5 days after [Task1]'s end
+-- end --
+@enduml
