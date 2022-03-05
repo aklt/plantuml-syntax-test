@@ -17,10 +17,10 @@ info:
 all: build
 
 par-png: $(UML)
-	$(MAKE) -C . -j $(nproc) $(PNG)
+	$(MAKE) -j $(nproc) $(PNG)
 
 par-svg: $(UML)
-	$(MAKE) -C . -j $(nproc) $(SVG)
+	$(MAKE) -j $(nproc) $(SVG)
 
 build: style.css index.html par-png
 
@@ -41,7 +41,10 @@ install:
 	npm install
 
 clean:
-	rm -f $(PNG) $(SVG) $(PRE) $(CSS) index.html style.css
+	rm -f $(PRE) $(CSS)
+
+distclean:
+	rm -fv $(PNG) $(SVG) index.html style.css
 
 %.png: %.uml
 	plantuml -tpng $<
