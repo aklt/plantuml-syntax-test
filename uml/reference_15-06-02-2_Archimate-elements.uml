@@ -1,0 +1,5 @@
+@startuml
+!include <archimate/Archimate>
+Business_Service(BService, "Business Service")
+@enduml
+

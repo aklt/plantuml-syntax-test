@@ -1,0 +1,20 @@
+@startuml
+!procedure $foo($arg)
+  :procedure start;
+  !while $arg!=0
+    !$i=3
+    #palegreen:arg=$arg;
+    !while $i!=0
+      :arg=$arg and i=$i;
+      !$i = $i - 1
+    !endwhile
+    !$arg = $arg - 1
+  !endwhile
+  :procedure end;
+!endprocedure
+
+start
+$foo(2)
+end
+@enduml
+

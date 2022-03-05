@@ -22,10 +22,10 @@ style.css: $(CSS) $(UML)
 	cat $(CSS) | sort | uniq > $@
 
 index.html: index.sh $(PRE) $(UML)
-	./index.sh $(PRE) > $@
+	bash ./index.sh $(PRE) > $@
 
 %.pre.html %.syntax.css: %.uml
-	./tohtml.sh $< uml/$$(basename $< .uml)
+	bash ./tohtml.sh $< uml/$$(basename $< .uml)
 
 dev:
 	npm run dev
