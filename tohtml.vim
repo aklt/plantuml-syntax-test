@@ -5,11 +5,12 @@ function! IndentPlantUML(filePath, fileType)
   filetype plugin indent on
   let &packpath=&packpath . ',' . './vim'
   packadd plantuml-syntax
-  execute ":read " . a:filePath
-  execute ":set ft=" . a:fileType
   set shiftwidth=2
   set tabstop=2
+  execute ":edit " . a:filePath
+  execute ":set ft=" . a:fileType
   normal gg
   normal /^@start\(gantt\|latex\|math\|mindmap\|uml\|wbs\)
   normal =/^@end
+  write
 endfun

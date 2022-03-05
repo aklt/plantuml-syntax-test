@@ -56,6 +56,6 @@ vim --noplugin -u NONE \
   -c "qa!"
 
 sed -rn '/^<pre/, /^<\/pre/ p' "${tmpFile}" > "${2}.pre.html"
-sed -rn '/^\./ p' "${tmpFile}" > "${2}.syntax.css"
+sed -rn '/^\.[a-z]\+ \+{/i p' "${tmpFile}" > "${2}.syntax.css"
 
 rm -fv "${tmpFile}"
