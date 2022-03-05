@@ -9,8 +9,6 @@ function! IndentPlantUML(filePath, fileType)
   set tabstop=2
   execute ":edit " . a:filePath
   execute ":set ft=" . a:fileType
-  normal gg
-  normal /^@start\(gantt\|latex\|math\|mindmap\|uml\|wbs\)
-  normal =/^@end
-  write
+  normal gg=G
+  write!
 endfun

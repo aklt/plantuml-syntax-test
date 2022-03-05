@@ -5,7 +5,7 @@ SVG=$(patsubst %.uml, %.svg, $(UML))
 PRE=$(patsubst %.uml, %.pre.html, $(UML))
 CSS=$(patsubst %.uml, %.syntax.css, $(UML))
 
-.PHONY: all build dev install clean
+.PHONY: all build dev install clean par-png par-svg
 
 info:
 	@echo "Warning: The screen will blink a lot!"
@@ -16,7 +16,13 @@ info:
 
 all: build
 
-build: style.css index.html $(PNG)
+par-png: $(UML)
+	$(MAKE) -C . -j $(nproc) $(PNG)
+
+par-svg: $(UML)
+	$(MAKE) -C . -j $(nproc) $(SVG)
+
+build: style.css index.html par-png
 
 style.css: $(CSS) $(UML)
 	cat $(CSS) | sort | uniq > $@
