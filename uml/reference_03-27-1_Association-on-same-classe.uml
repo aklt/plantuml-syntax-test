@@ -1,10 +1,10 @@
 @startuml
 class Station {
-+name: string
+	+name: string
 }
 
 class StationCrossing {
-+cost: TimeInterval
+	+cost: TimeInterval
 }
 
 <> diamond

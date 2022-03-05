@@ -1,40 +1,40 @@
 @startuml
 
 class Foo <<Bar>> {
-    You can use
-    several lines
-    ..
-    As you want
-    and group
-    ==
-    things together.
-    --
-    You can have as many
-    groups as you want.
-    --
-    +publicMethod()
-    -privateMethod()
-    #protectedMethod()
-    End of class
+	You can use
+	several lines
+	..
+	As you want
+	and group
+	==
+	things together.
+	--
+	You can have as many
+	groups as you want.
+	--
+	+publicMethod()
+	-privateMethod()
+	#protectedMethod()
+	End of class
 }
 
 class Bar { 
-    note: This is a class
-    .. Hello foo ..
-    +public
-    .. Private things prefixed with - ..
-    -private
-    #protected
-    int foo
-    String password
+	note: This is a class
+	.. Hello foo ..
+	+public
+	.. Private things prefixed with - ..
+	-private
+	#protected
+	int foo
+	String password
 }
 
 interface IBar {
-    int a
-    int b
-    --
-    +public()
-    -private()
+	int a
+	int b
+	--
+	+public()
+	-private()
 }
 
 Foo --> Bar

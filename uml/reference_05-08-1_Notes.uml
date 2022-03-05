@@ -3,7 +3,7 @@
 note right: This action has to be defined
 "Some action" --> (*)
 note left
-  This note is on
-  several lines
+	This note is on
+	several lines
 end note
 @enduml

@@ -5,9 +5,9 @@ object Berlin
 object NewYork
 
 map CapitalCity {
-  UK *-> London
-  USA *--> Washington
-  Germany *---> Berlin
+UK *-> London
+USA *--> Washington
+Germany *---> Berlin
 }
 
 NewYork --> CapitalCity::USA

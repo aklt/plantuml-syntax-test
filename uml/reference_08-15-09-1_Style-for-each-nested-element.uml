@@ -1,9 +1,9 @@
 @startuml
 <style>
 artifact {
-BackGroundColor #ee1100
-LineThickness 1
-LineColor black
+	BackGroundColor #ee1100
+	LineThickness 1
+	LineColor black
 }
 card {
 BackGroundColor #ff3311
@@ -11,9 +11,9 @@ LineThickness 1
 LineColor black
 }
 cloud {
-BackGroundColor #ff4422
-LineThickness 1
-LineColor black
+	BackGroundColor #ff4422
+	LineThickness 1
+	LineColor black
 }
 component {
 BackGroundColor #ff6644
@@ -21,24 +21,24 @@ LineThickness 1
 LineColor black
 }
 database {
-BackGroundColor #ff9933
-LineThickness 1
-LineColor black
+	BackGroundColor #ff9933
+	LineThickness 1
+	LineColor black
 }
 file {
-BackGroundColor #feae2d
-LineThickness 1
-LineColor black
+	BackGroundColor #feae2d
+	LineThickness 1
+	LineColor black
 }
 folder {
-BackGroundColor #ccbb33
-LineThickness 1
-LineColor black
+	BackGroundColor #ccbb33
+	LineThickness 1
+	LineColor black
 }
 frame {
-BackGroundColor #d0c310
-LineThickness 1
-LineColor black
+	BackGroundColor #d0c310
+	LineThickness 1
+	LineColor black
 }
 hexagon {
 BackGroundColor #aacc22
@@ -46,14 +46,14 @@ LineThickness 1
 LineColor black
 }
 node {
-BackGroundColor #22ccaa
-LineThickness 1
-LineColor black
+	BackGroundColor #22ccaa
+	LineThickness 1
+	LineColor black
 }
 package {
-BackGroundColor #12bdb9
-LineThickness 1
-LineColor black
+	BackGroundColor #12bdb9
+	LineThickness 1
+	LineColor black
 }
 queue {
 BackGroundColor #11aabb
@@ -61,9 +61,9 @@ LineThickness 1
 LineColor black
 }
 rectangle {
-BackGroundColor #4444dd
-LineThickness 1
-LineColor black
+	BackGroundColor #4444dd
+	LineThickness 1
+	LineColor black
 }
 stack {
 BackGroundColor #3311bb
@@ -71,54 +71,54 @@ LineThickness 1
 LineColor black
 }
 storage {
-BackGroundColor #3b0cbd
-LineThickness 1
-LineColor black
+	BackGroundColor #3b0cbd
+	LineThickness 1
+	LineColor black
 }
 </style>
 artifact e1 as "artifact" {
-file f1
+	file f1
 }
 card e2 as "card" {
 file f2
 }
 cloud e3 as "cloud" {
-file f3
+	file f3
 }
 component e4 as "component" {
 file f4
 }
 database e5 as "database" {
-file f5
+	file f5
 }
 file e6 as "file" {
-file f6
+	file f6
 }
 folder e7 as "folder" {
-file f7
+	file f7
 }
 frame e8 as "frame" {
-file f8
+	file f8
 }
 hexagon e9 as "hexagon" {
 file f9
 }
 node e10 as "node" {
-file f10
+	file f10
 }
 package e11 as "package" {
-file f11
+	file f11
 }
 queue e12 as "queue" {
 file f12
 }
 rectangle e13 as "rectangle" {
-file f13
+	file f13
 }
 stack e14 as "stack" {
 file f14
 }
 storage e15 as "storage" {
-file f15
+	file f15
 }
 @enduml

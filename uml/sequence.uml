@@ -6,9 +6,9 @@ Bob->Alice : ok
 note right: this is another note
 Bob->Bob : I am thinking
 note left
-a note
-can also be defined
-on several lines
+	a note
+	can also be defined
+	on several lines
 end note
 == Repeat ==
 Alice -> Bob: message 1

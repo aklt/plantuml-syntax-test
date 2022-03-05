@@ -2,12 +2,12 @@
 |#pink|Actor_For_red|
 start
 if (color?) is (red) then
-#pink:**action red**;
-:foo1;
+	#pink:**action red**;
+	:foo1;
 else (not red)
-|#lightgray|Actor_For_no_red|
-#lightgray:**action not red**;
-:foo2;
+	|#lightgray|Actor_For_no_red|
+	#lightgray:**action not red**;
+	:foo2;
 endif
 |Next_Actor|
 #lightblue:foo3;

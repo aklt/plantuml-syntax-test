@@ -4,7 +4,7 @@ footer some footer
 title My title
 [Prototype design] lasts 13 days
 legend
-The legend
+	The legend
 end legend
 caption This is caption
 @enduml

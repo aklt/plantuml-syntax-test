@@ -1,24 +1,24 @@
 @startuml
 nwdiag {
-  // define group outside of network definitions
-  group {
-    color = "#FFAAAA";
+// define group outside of network definitions
+group {
+	color = "#FFAAAA";
 
-    web01;
-    web02;
-    db01;
-  }
+	web01;
+	web02;
+	db01;
+}
 
-  network dmz {
-    web01;
-    web02;
-  }
-  network internal {
-    web01;
-    web02;
-    db01;
-    db02;
-  }
+network dmz {
+web01;
+web02;
+	}
+	network internal {
+	web01;
+	web02;
+	db01;
+	db02;
+}
 }
 @enduml
 

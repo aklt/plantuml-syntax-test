@@ -1,15 +1,15 @@
 @startuml
 state CurrentSite #pink {
-  state HardwareSetup #lightblue {
-    state Site #brown
-    Site -[hidden]-> Controller
-    Controller -[hidden]-> Devices
-  }
-  state PresentationSetup{
-    Groups -[hidden]-> PlansAndGraphics
-  }
-  state Trends #FFFF77
-  state Schedule #magenta
-  state AlarmSupression
+	state HardwareSetup #lightblue {
+		state Site #brown
+		Site -[hidden]-> Controller
+		Controller -[hidden]-> Devices
+	}
+	state PresentationSetup{
+		Groups -[hidden]-> PlansAndGraphics
+	}
+	state Trends #FFFF77
+	state Schedule #magenta
+	state AlarmSupression
 }
 @enduml

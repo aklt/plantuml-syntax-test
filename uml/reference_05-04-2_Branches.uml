@@ -4,7 +4,7 @@ If "input is verbose" then
 --> [Yes] "turn on verbosity"
 --> "run command"
 else
---> "run command"
-Endif
--->(*)
+	--> "run command"
+	Endif
+	-->(*)
 @enduml

@@ -1,9 +1,9 @@
 @startuml
 !procedure defaulttest($x, $y="DefaultY", $z="DefaultZ")
 note over Alice
-  x = $x
-  y = $y
-  z = $z
+	x = $x
+	y = $y
+	z = $z
 end note
 !endprocedure
 

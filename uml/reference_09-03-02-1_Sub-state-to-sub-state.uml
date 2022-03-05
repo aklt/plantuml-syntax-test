@@ -1,13 +1,13 @@
 @startuml
 state A {
-  state X {
-  }
-  state Y {
-  }
+	state X {
+	}
+	state Y {
+	}
 }
 state B {
-  state Z {
-  }
+	state Z {
+	}
 }
 X --> Z
 Z --> Y

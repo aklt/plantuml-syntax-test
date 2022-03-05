@@ -5,7 +5,7 @@ package foo1.foo2 {
 }
 
 package foo1.foo2.foo3 {
-  class Object
+	class Object
 }
 
 foo1.foo2 +-- foo1.foo2.foo3

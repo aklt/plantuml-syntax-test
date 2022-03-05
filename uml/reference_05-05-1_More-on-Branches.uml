@@ -2,20 +2,20 @@
 (*) --> if "Some Test" then
 -->[true] "action 1"
 if "" then
--> "action 3" as a3
+	-> "action 3" as a3
 else
-if "Other test" then
--left-> "action 5"
-else
---> "action 6"
+	if "Other test" then
+		-left-> "action 5"
+	else
+		--> "action 6"
+	endif
 endif
-endif
 else
-->[false] "action 2"
+	->[false] "action 2"
 endif
 a3 --> if "last test" then
 --> "action 7"
 else
--> "action 8"
+	-> "action 8"
 endif
 @enduml

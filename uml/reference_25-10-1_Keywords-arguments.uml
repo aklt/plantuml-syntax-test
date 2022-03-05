@@ -6,7 +6,7 @@ rectangle $alias as "
 ==$label==
 //<size:$size>[$technology]</size>//
 
-  $description"
+$description"
 !endprocedure
 
 $element(myalias, "This description is %newline()on several lines", $size=10, $technology="Java")

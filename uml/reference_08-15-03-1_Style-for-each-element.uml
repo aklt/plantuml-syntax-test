@@ -11,9 +11,9 @@ LineThickness 1
 LineColor black
 }
 artifact {
-BackGroundColor #ee1100
-LineThickness 1
-LineColor black
+	BackGroundColor #ee1100
+	LineThickness 1
+	LineColor black
 }
 boundary {
 BackGroundColor #ee1100
@@ -31,9 +31,9 @@ LineThickness 1
 LineColor black
 }
 cloud {
-BackGroundColor #ff4422
-LineThickness 1
-LineColor black
+	BackGroundColor #ff4422
+	LineThickness 1
+	LineColor black
 }
 collections {
 BackGroundColor #ff4422
@@ -51,29 +51,29 @@ LineThickness 1
 LineColor black
 }
 database {
-BackGroundColor #ff9933
-LineThickness 1
-LineColor black
+	BackGroundColor #ff9933
+	LineThickness 1
+	LineColor black
 }
 entity {
-BackGroundColor #feae2d
-LineThickness 1
-LineColor black
+	BackGroundColor #feae2d
+	LineThickness 1
+	LineColor black
 }
 file {
-BackGroundColor #feae2d
-LineThickness 1
-LineColor black
+	BackGroundColor #feae2d
+	LineThickness 1
+	LineColor black
 }
 folder {
-BackGroundColor #ccbb33
-LineThickness 1
-LineColor black
+	BackGroundColor #ccbb33
+	LineThickness 1
+	LineColor black
 }
 frame {
-BackGroundColor #d0c310
-LineThickness 1
-LineColor black
+	BackGroundColor #d0c310
+	LineThickness 1
+	LineColor black
 }
 hexagon {
 BackGroundColor #aacc22
@@ -81,9 +81,9 @@ LineThickness 1
 LineColor black
 }
 interface {
-BackGroundColor #69d025
-LineThickness 1
-LineColor black
+	BackGroundColor #69d025
+	LineThickness 1
+	LineColor black
 }
 label {
 BackGroundColor black
@@ -91,14 +91,14 @@ LineThickness 1
 LineColor black
 }
 node {
-BackGroundColor #22ccaa
-LineThickness 1
-LineColor black
+	BackGroundColor #22ccaa
+	LineThickness 1
+	LineColor black
 }
 package {
-BackGroundColor #12bdb9
-LineThickness 1
-LineColor black
+	BackGroundColor #12bdb9
+	LineThickness 1
+	LineColor black
 }
 queue {
 BackGroundColor #11aabb
@@ -106,9 +106,9 @@ LineThickness 1
 LineColor black
 }
 rectangle {
-BackGroundColor #4444dd
-LineThickness 1
-LineColor black
+	BackGroundColor #4444dd
+	LineThickness 1
+	LineColor black
 }
 stack {
 BackGroundColor #3311bb
@@ -116,9 +116,9 @@ LineThickness 1
 LineColor black
 }
 storage {
-BackGroundColor #3b0cbd
-LineThickness 1
-LineColor black
+	BackGroundColor #3b0cbd
+	LineThickness 1
+	LineColor black
 }
 usecase {
 BackGroundColor #442299

@@ -1,8 +1,8 @@
 @startuml
 <style>
 ganttDiagram {
-	arrow {
-		LineColor blue
+arrow {
+LineColor blue
 	}
 }
 </style>

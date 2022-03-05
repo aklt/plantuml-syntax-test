@@ -2,9 +2,9 @@
 skinparam ConditionEndStyle hline
 :A;
 if (decision) then (yes)
-:B1;
+	:B1;
 else (no)
-:B2;
+	:B2;
 endif
 :C;
 @enduml

@@ -1,13 +1,13 @@
 @startuml
 skinparam backgroundColor #AAFFFF
 skinparam activity {
-StartColor red
-BarColor SaddleBrown
-EndColor Silver
-BackgroundColor Peru
-BackgroundColor<< Begin >> Olive
-BorderColor Peru
-FontName Impact
+	StartColor red
+	BarColor SaddleBrown
+	EndColor Silver
+	BackgroundColor Peru
+	BackgroundColor<< Begin >> Olive
+	BorderColor Peru
+	FontName Impact
 }
 (*) --> "Climbs on Platform" << Begin >>
 --> === S1 ===

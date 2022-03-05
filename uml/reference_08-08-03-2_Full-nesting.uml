@@ -1,28 +1,28 @@
 @startuml
 storage storage {
-stack stack {
-rectangle rectangle {
-queue queue {
-package package {
-node node {
-hexagon hexagon {
-frame frame {
-folder folder {
-file file {
-database database {
-component component {
-cloud cloud {
-card card {
-artifact artifact {
-}
-}
-}
-}
-}
-}
-}
-}
-}
+	stack stack {
+	rectangle rectangle {
+		queue queue {
+		package package {
+			node node {
+				hexagon hexagon {
+				frame frame {
+					folder folder {
+						file file {
+							database database {
+								component component {
+								cloud cloud {
+									card card {
+									artifact artifact {
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 }
 }

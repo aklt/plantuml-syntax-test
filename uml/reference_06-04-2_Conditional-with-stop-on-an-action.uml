@@ -1,7 +1,7 @@
 @startuml
 if (condition?) then
-  #pink:error;
-  kill
+	#pink:error;
+	kill
 endif
 #palegreen:action;
 @enduml

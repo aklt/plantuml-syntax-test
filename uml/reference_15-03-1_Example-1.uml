@@ -52,14 +52,14 @@ HAPA .up.|> claimsAdministration
 HFPA .up.|> Payment
 
 legend left
-Example from the "Archisurance case study" (OpenGroup).
-See
-====
-<$bProcess> :business process
-====
-<$aService> : application service
-====
-<$aComponent> : application component
+	Example from the "Archisurance case study" (OpenGroup).
+	See
+	====
+	<$bProcess> :business process
+	====
+	<$aService> : application service
+	====
+	<$aComponent> : application component
 endlegend
 @enduml
 

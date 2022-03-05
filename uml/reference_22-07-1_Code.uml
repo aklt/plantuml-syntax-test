@@ -1,9 +1,9 @@
 @startuml
 Alice -> Bob : hello
 note right
-<code>
-main() {
-  printf("Hello world");
+	<code>
+	main() {
+	printf("Hello world");
 }
 </code>
 end note

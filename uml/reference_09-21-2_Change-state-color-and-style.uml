@@ -7,11 +7,11 @@ state FooDotted #line.dotted;line:blue {
 state FooBold #line.bold {
 }
 state Foo1 #line.dotted;line:green {
-state inner1 #line.dotted;line:yellow
+	state inner1 #line.dotted;line:yellow
 }
 state out #line.dotted;line:gold
 state Foo2 #line.bold;line:green {
-state inner2 #line.dotted;line:yellow
+	state inner2 #line.dotted;line:yellow
 }
 inner1 -> inner2
 out -> inner2
