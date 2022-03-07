@@ -11,10 +11,10 @@ Or dotted line
 Enjoy!
 "
 note right
-  This is working also in notes
-  You can also add title in all these lines
-  ==Title==
-  --Another title--
+	This is working also in notes
+	You can also add title in all these lines
+	==Title==
+	--Another title--
 end note
 
 @enduml

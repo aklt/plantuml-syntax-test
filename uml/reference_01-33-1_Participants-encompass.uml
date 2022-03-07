@@ -1,7 +1,7 @@
 @startuml
 box "Internal Service" #LightBlue
-participant Bob
-participant Alice
+	participant Bob
+	participant Alice
 end box
 participant Other
 Bob -> Alice : hello

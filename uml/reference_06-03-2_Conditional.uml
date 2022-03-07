@@ -1,6 +1,6 @@
 @startuml
 if (color?) is (<color:red>red) then
-:print red;
+	:print red;
 else
-:print not red;
+	:print not red;
 @enduml

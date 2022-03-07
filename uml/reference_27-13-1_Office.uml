@@ -9,13 +9,13 @@
 title Office Icons Example
 
 package "Sprites" {
-    OFF_DATABASE_SERVER(db,DB)
-    OFF_APPLICATION_SERVER(app,App-Server)
-    OFF_FIREWALL_ORANGE(fw,Firewall)
-    OFF_CLOUD_DISASTER_RED(cloud,Cloud)
-    db <-> app
-    app <--> fw
-    fw <.left.> cloud
+	OFF_DATABASE_SERVER(db,DB)
+	OFF_APPLICATION_SERVER(app,App-Server)
+	OFF_FIREWALL_ORANGE(fw,Firewall)
+	OFF_CLOUD_DISASTER_RED(cloud,Cloud)
+	db <-> app
+	app <--> fw
+	fw <.left.> cloud
 }
 @enduml
 

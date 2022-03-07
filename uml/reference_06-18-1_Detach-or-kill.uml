@@ -1,15 +1,15 @@
 @startuml
 :start;
 fork
-:foo1;
-:foo2;
+	:foo1;
+	:foo2;
 fork again
-:foo3;
-detach
+	:foo3;
+	detach
 endfork
 if (foo4) then
-:foo5;
-detach
+	:foo5;
+	detach
 endif
 :foo6;
 detach

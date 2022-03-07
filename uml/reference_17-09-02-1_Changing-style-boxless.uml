@@ -1,12 +1,12 @@
 @startmindmap
 <style>
 mindmapDiagram {
-  node {
-    BackgroundColor lightGreen
-  }
-  boxless {
-    FontColor darkgreen
-  }
+	node {
+		BackgroundColor lightGreen
+	}
+	boxless {
+		FontColor darkgreen
+	}
 }
 </style>
 * Linux

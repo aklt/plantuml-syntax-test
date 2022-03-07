@@ -1,11 +1,11 @@
 @startyaml
 <style>
 yamlDiagram {
-    highlight {
-      BackGroundColor red
-      FontColor white
-      FontStyle italic
-    }
+		highlight {
+			BackGroundColor red
+			FontColor white
+			FontStyle italic
+		}
 }
 </style>
 #highlight "french-hens"

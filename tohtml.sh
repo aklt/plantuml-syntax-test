@@ -52,10 +52,11 @@ vim --noplugin -u NONE \
   -c ":call IndentPlantUML('$1', '${ft}')" \
   -c ":let g:loaded_2html_plugin = 0" \
   -c ":source $toHtml" \
-  -c ":w! ${tmpFile}"  \
+  -c ":w! ${tmpFile}" \
   -c "qa!"
 
 sed -rn '/^<pre/, /^<\/pre/ p' "${tmpFile}" > "${2}.pre.html"
-sed -rn '/^\./ p' "${tmpFile}" > "${2}.syntax.css"
+sed -rn '/^\.[A-Z]+[a-zA-Z0-9]+ +\{/ p' "${tmpFile}" > "${2}.syntax.css"
 
-rm -fv "${tmpFile}"
+echo tmp
+cat "${tmpFile}"

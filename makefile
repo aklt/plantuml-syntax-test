@@ -1,11 +1,11 @@
 
 UML=$(wildcard uml/*.uml)
 PNG=$(patsubst %.uml, %.png, $(UML))
-#SVG=$(patsubst %.uml, %.svg, $(UML))
+SVG=$(patsubst %.uml, %.svg, $(UML))
 PRE=$(patsubst %.uml, %.pre.html, $(UML))
 CSS=$(patsubst %.uml, %.syntax.css, $(UML))
 
-.PHONY: all build dev install clean
+.PHONY: all build dev install clean par-png par-svg
 
 info:
 	@echo "Warning: The screen will blink a lot!"
@@ -16,7 +16,13 @@ info:
 
 all: build
 
-build: style.css index.html $(PNG) $(SVG)
+par-png: $(UML)
+	$(MAKE) -j $(nproc) $(PNG)
+
+par-svg: $(UML)
+	$(MAKE) -j $(nproc) $(SVG)
+
+build: style.css index.html par-png
 
 style.css: $(CSS) $(UML)
 	cat $(CSS) | sort | uniq > $@
@@ -35,7 +41,10 @@ install:
 	npm install
 
 clean:
-	rm -f $(PNG) $(PRE) $(CSS) index.html style.css
+	rm -f $(PRE) $(CSS)
+
+distclean:
+	rm -fv $(PNG) $(SVG) index.html style.css
 
 %.png: %.uml
 	plantuml -tpng $<

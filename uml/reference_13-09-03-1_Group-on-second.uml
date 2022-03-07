@@ -1,23 +1,23 @@
 @startuml
 nwdiag {
-  internet [ shape = cloud];
-  internet -- router;
+internet [ shape = cloud];
+internet -- router;
 
-  network proxy {
-    router;
-    app;
-  }
+network proxy {
+router;
+app;
+	}
 
-  group {
-    color = "pink";
-    app;
-    db;
-  }
+	group {
+		color = "pink";
+		app;
+		db;
+	}
 
-  network default {
-    app;
-    db;
-  }
+	network default {
+	app;
+	db;
+}
 }
 @enduml
 

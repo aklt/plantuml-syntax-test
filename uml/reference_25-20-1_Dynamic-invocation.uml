@@ -1,6 +1,6 @@
 @startuml
 !procedure $go()
-  Bob -> Alice : hello
+Bob -> Alice : hello
 !endprocedure
 
 !$wrapper = "$go"

@@ -1,18 +1,18 @@
 @startuml
 !procedure $msg($source, $destination)
-  $source --> $destination
+$source --> $destination
 !endprocedure
 
 !procedure $init_class($name)
-  class $name {
-    $addCommonMethod()
-  }
+class $name {
+	$addCommonMethod()
+}
 !endprocedure
 
 
 !procedure $addCommonMethod()
-  toString()
-  hashCode()
+toString()
+hashCode()
 !endprocedure
 
 

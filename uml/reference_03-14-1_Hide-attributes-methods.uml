@@ -1,12 +1,12 @@
 @startuml
 class Dummy1 {
-+myMethods()
+	+myMethods()
 }
 class Dummy2 {
-+hiddenMethod()
+	+hiddenMethod()
 }
 class Dummy3 <<Serializable>> {
-String name
+	String name
 }
 hide members
 hide <<Serializable>> circle

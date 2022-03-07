@@ -1,9 +1,9 @@
 @startuml
 package "Classic Collections" #DDDDDD {
-Object <|-- ArrayList
+	Object <|-- ArrayList
 }
 package net.sourceforge.plantuml {
-Object <|-- Demo1
-Demo1 *- Demo2
+	Object <|-- Demo1
+	Demo1 *- Demo2
 }
 @enduml

@@ -23,9 +23,9 @@ BackGroundColor yellow
 LineColor red
 }
 note {
-FontColor DarkGreen
-FontSize 10
-LineColor OrangeRed
+	FontColor DarkGreen
+	FontSize 10
+	LineColor OrangeRed
 }
 arrow {
 FontName Helvetica
@@ -46,10 +46,10 @@ FontColor purple
 </style>
 [Task1] lasts 20 days
 note bottom
-memo1 ...
-memo2 ...
-explanations1 ...
-explanations2 ...
+	memo1 ...
+	memo2 ...
+	explanations1 ...
+	explanations2 ...
 end note
 [Task2] lasts 4 days
 [Task1] -> [Task2]

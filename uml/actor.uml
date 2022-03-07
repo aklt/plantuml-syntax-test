@@ -6,8 +6,8 @@ actor Alice #green
 
 participant Bob
 box "Sweet deal"
-participant "Mr funky foo" as M #EAA
-participant "Mr. Sleepy" as S #AEA
+	participant "Mr funky foo" as M #EAA
+	participant "Mr. Sleepy" as S #AEA
 end box
 
 ref over Alice, Bob: init

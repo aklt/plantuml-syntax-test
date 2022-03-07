@@ -1,13 +1,13 @@
 @startuml
 nwdiag {
-  inet [shape = cloud];
-  inet -- router;
+inet [shape = cloud];
+inet -- router;
 
-  network {
-    router;
-    web01;
-    web02;
-  }
+network {
+router;
+web01;
+web02;
+	}
 }
 @enduml
 

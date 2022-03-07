@@ -1,8 +1,8 @@
 @startuml
 skinparam class {
-BackgroundColor PaleGreen
-ArrowColor SeaGreen
-BorderColor SpringGreen
+	BackgroundColor PaleGreen
+	ArrowColor SeaGreen
+	BorderColor SpringGreen
 }
 skinparam stereotypeCBackgroundColor YellowGreen
 Class01 "1" *-- "many" Class02 : contains

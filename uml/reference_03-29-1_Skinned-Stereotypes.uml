@@ -1,10 +1,10 @@
 @startuml
 skinparam class {
-BackgroundColor PaleGreen
-ArrowColor SeaGreen
-BorderColor SpringGreen
-BackgroundColor<<Foo>> Wheat
-BorderColor<<Foo>> Tomato
+	BackgroundColor PaleGreen
+	ArrowColor SeaGreen
+	BorderColor SpringGreen
+	BackgroundColor<<Foo>> Wheat
+	BorderColor<<Foo>> Tomato
 }
 skinparam stereotypeCBackgroundColor YellowGreen
 skinparam stereotypeCBackgroundColor<< Foo >> DimGray

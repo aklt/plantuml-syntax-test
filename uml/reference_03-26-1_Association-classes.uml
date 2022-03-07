@@ -1,11 +1,11 @@
 @startuml
 class Student {
-Name
+	Name
 }
 Student "0..*" - "1..*" Course
 (Student, Course) .. Enrollment
 class Enrollment {
-drop()
-cancel()
+	drop()
+	cancel()
 }
 @enduml

@@ -9,13 +9,13 @@ Collection <|- List
 AbstractCollection <|- AbstractList
 AbstractList <|-- ArrayList
 class ArrayList {
-Object[] elementData
-size()
+	Object[] elementData
+	size()
 }
 enum TimeUnit {
-DAYS
-HOURS
-MINUTES
+	DAYS
+	HOURS
+	MINUTES
 }
 annotation SuppressWarnings
 @enduml

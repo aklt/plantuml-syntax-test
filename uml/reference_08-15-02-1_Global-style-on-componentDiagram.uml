@@ -1,9 +1,9 @@
 @startuml
 <style>
 componentDiagram {
-  BackGroundColor palegreen
-  LineThickness 1
-  LineColor red
+BackGroundColor palegreen
+LineThickness 1
+LineColor red
 }
 </style>
 actor actor

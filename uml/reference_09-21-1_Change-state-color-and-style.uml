@@ -7,11 +7,11 @@ state FooDotted ##[dotted]blue {
 state FooBold ##[bold] {
 }
 state Foo1 ##[dotted]green {
-state inner1 ##[dotted]yellow
+	state inner1 ##[dotted]yellow
 }
 state out ##[dotted]gold
 state Foo2 ##[bold]green {
-state inner2 ##[dotted]yellow
+	state inner2 ##[dotted]yellow
 }
 inner1 -> inner2
 out -> inner2
