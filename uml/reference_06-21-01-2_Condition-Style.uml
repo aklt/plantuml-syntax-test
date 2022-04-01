@@ -1,0 +1,8 @@
+@startuml
+start
+repeat
+:act1;
+:act2;
+repeatwhile (<b>end)
+:act3;
+@enduml

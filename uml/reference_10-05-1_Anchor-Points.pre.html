@@ -1,0 +1,21 @@
+<pre id='vimCodeElement'>
+<span class="PreProc">@startuml</span>
+clock clk with period 1
+binary <span class="Constant">&quot;enable&quot;</span> <span class="Statement">as</span> EN
+<span class="Type">concise</span> <span class="Constant">&quot;dataBus&quot;</span> <span class="Statement">as</span> db
+@0 <span class="Statement">as</span> :<span class="Statement">start</span>
+@5 <span class="Statement">as</span> :en_high
+@10 <span class="Statement">as</span> :en_low
+@:<span class="Statement">start</span>
+EN <span class="Statement">is</span> low
+db <span class="Statement">is</span> <span class="Constant">&quot;0x0000&quot;</span>
+@:en_high
+EN <span class="Statement">is</span> high
+@:en_low
+EN <span class="Statement">is</span> low
+@:en_high-2
+db <span class="Statement">is</span> <span class="Constant">&quot;0xf23a&quot;</span>
+@:en_high+6
+db <span class="Statement">is</span> <span class="Constant">&quot;0x0000&quot;</span>
+<span class="PreProc">@enduml</span>
+</pre>

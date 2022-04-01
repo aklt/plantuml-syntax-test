@@ -1,0 +1,61 @@
+<pre id='vimCodeElement'>
+<span class="PreProc">@startuml</span>
+<span class="Identifier">&lt;style&gt;</span>
+ganttDiagram {
+task {
+<span class="Identifier">FontName</span> Helvetica
+<span class="Identifier">FontColor</span> <span class="Constant">red</span>
+<span class="Identifier">FontSize</span> 18
+PlantUML Language Reference Guide <span class="Type">(1.2021.2)</span>
+268 / 415
+16.18
+Using <span class="Statement">style</span>
+16
+GANTT DIAGRAM
+<span class="Identifier">FontStyle</span> <span class="Statement">bold</span>
+<span class="Identifier">BackGroundColor</span> <span class="Constant">GreenYellow</span>
+<span class="Identifier">LineColor</span> <span class="Constant">blue</span>
+}
+milestone {
+<span class="Identifier">FontColor</span> <span class="Constant">blue</span>
+<span class="Identifier">FontSize</span> 25
+<span class="Identifier">FontStyle</span> <span class="Statement">italic</span>
+<span class="Identifier">BackGroundColor</span> <span class="Constant">yellow</span>
+<span class="Identifier">LineColor</span> <span class="Constant">red</span>
+}
+<span class="Statement">note</span> {
+<span class="Constant">  FontColor DarkGreen</span>
+<span class="Constant">  FontSize 10</span>
+<span class="Constant">  LineColor OrangeRed</span>
+<span class="Constant">}</span>
+<span class="Constant">arrow {</span>
+<span class="Constant">FontName Helvetica</span>
+<span class="Constant">FontColor red</span>
+<span class="Constant">FontSize 18</span>
+<span class="Constant">FontStyle bold</span>
+<span class="Constant">BackGroundColor GreenYellow</span>
+<span class="Constant">LineColor blue</span>
+<span class="Constant">}</span>
+<span class="Constant">separator {</span>
+<span class="Constant">LineColor red</span>
+<span class="Constant">BackGroundColor green</span>
+<span class="Constant">FontSize 16</span>
+<span class="Constant">FontStyle bold</span>
+<span class="Constant">FontColor purple</span>
+<span class="Constant">}</span>
+<span class="Constant">}</span>
+<span class="Identifier">&lt;/style&gt;</span>
+<span class="Constant">[Task1] lasts 20 days</span>
+<span class="Constant">note</span> <span class="Statement">bottom</span>
+<span class="Constant">  memo1 ...</span>
+<span class="Constant">  memo2 ...</span>
+<span class="Constant">  explanations1 ...</span>
+<span class="Constant">  explanations2 ...</span>
+<span class="Statement">end</span> <span class="Statement">note</span>
+<span class="Type">[Task2]</span> <span class="Statement">lasts</span> 4 <span class="Statement">days</span>
+<span class="Type">[Task1]</span> <span class="Identifier">-&gt;</span> <span class="Type">[Task2]</span>
+<span class="Directory">-- </span>Separator title --
+<span class="Type">[M1]</span> <span class="Statement">happens</span> <span class="Statement">on</span> 5 <span class="Statement">days</span> <span class="Statement">after</span> <span class="Type">[Task1]'s</span> <span class="Statement">end</span>
+<span class="Directory">-- </span>end --
+<span class="PreProc">@enduml</span>
+</pre>

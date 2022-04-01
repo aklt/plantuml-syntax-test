@@ -1,0 +1,33 @@
+<pre id='vimCodeElement'>
+<span class="PreProc">@startuml</span>
+<span class="Comment">== Initialize ==</span>
+Alice<span class="Identifier">-&gt;</span>Bob<span class="Comment"> : hello</span>
+<span class="Statement">note</span> <span class="Statement">left</span>: this <span class="Statement">is</span> a <span class="Type">first</span> <span class="Statement">note</span>
+Bob<span class="Identifier">-&gt;</span>Alice<span class="Comment"> : ok</span>
+<span class="Statement">note</span> <span class="Statement">right</span>: this <span class="Statement">is</span> another <span class="Statement">note</span>
+Bob<span class="Identifier">-&gt;</span>Bob<span class="Comment"> : I am thinking</span>
+<span class="Statement">note</span> <span class="Statement">left</span>
+<span class="Constant">  a note</span>
+<span class="Constant">  can also be defined</span>
+<span class="Constant">  on several lines</span>
+<span class="Statement">end</span> <span class="Statement">note</span>
+<span class="Comment">== Repeat ==</span>
+Alice <span class="Identifier">-&gt;</span> Bob: message 1
+Bob <span class="Identifier">--&gt;</span> Alice: ok
+<span class="Comment">|||</span>
+Alice <span class="Identifier">-&gt;</span> Bob: message 2
+Bob <span class="Identifier">--&gt;</span> Alice: ok
+<span class="Comment">||45||</span>
+Alice <span class="Identifier">-&gt;</span> Bob: message 3
+Bob <span class="Identifier">--&gt;</span> Alice: ok
+<span class="Comment">== Get Funky ==</span>
+Bob <span class="Identifier">--&gt;x</span> Alice
+Bob <span class="Identifier">--&gt;&gt;</span> Alice
+Bob <span class="Identifier">--\</span> Alice
+Bob <span class="Identifier">\\--</span> Alice
+Bob <span class="Identifier">--&gt;o</span> Alice
+Bob <span class="Identifier">&lt;--&gt;o</span> Alice
+Bob <span class="Identifier">&lt;--&gt;</span> Alice
+<span class="Statement">note</span> <span class="Statement">right</span>: These <span class="Statement">are</span>\nthe Funky arrows,\nYes,...
+<span class="PreProc">@enduml</span>
+</pre>

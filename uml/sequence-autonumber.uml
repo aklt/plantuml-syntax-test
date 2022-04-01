@@ -1,0 +1,8 @@
+@startuml
+autonumber 10 10
+
+B -> A: Hello
+A -> B: Yes?
+B -> A: Fresh foo!
+
+@enduml

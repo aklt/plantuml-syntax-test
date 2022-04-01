@@ -1,0 +1,10 @@
+.Comment { color: #8080ff; }
+.Constant { color: #ff6060; }
+.Directory { color: #8080ff; }
+.Identifier { color: #00ffff; }
+.MoreMsg { color: #00ff00; }
+.PreProc { color: #ff40ff; }
+.Special { color: #ff40ff; }
+.Statement { color: #ffff00; }
+.Type { color: #00ff00; }
+.WarningMsg { color: #ff6060; }

@@ -1,0 +1,26 @@
+<pre id='vimCodeElement'>
+<span class="PreProc">@startuml</span>
+<span class="Comment">'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.</span>
+<span class="Comment">'SPDX-License-Identifier: MIT (For details, see <a href="https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)">https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)</a></span>
+<span class="PreProc">!include </span><span class="Constant">&lt;awslib/AWSCommon&gt;</span>
+<span class="Comment">' Uncomment the following line to create simplified view</span>
+<span class="Comment">' !include &lt;awslib/AWSSimplified&gt;</span>
+<span class="PreProc">!include </span><span class="Constant">&lt;awslib/General/Users&gt;</span>
+<span class="PreProc">!include </span><span class="Constant">&lt;awslib/Mobile/APIGateway&gt;</span>
+<span class="PreProc">!include </span><span class="Constant">&lt;awslib/SecurityIdentityAndCompliance/Cognito&gt;</span>
+<span class="PreProc">!include </span><span class="Constant">&lt;awslib/Compute/Lambda&gt;</span>
+<span class="PreProc">!include </span><span class="Constant">&lt;awslib/Database/DynamoDB&gt;</span>
+<span class="Statement">left</span> <span class="Statement">to</span> <span class="Statement">right</span> direction
+Users<span class="Type">(sources, &quot;Events&quot;, &quot;millions of users&quot;)</span>
+APIGateway<span class="Type">(votingAPI, &quot;Voting API&quot;, &quot;user votes&quot;)</span>
+Cognito<span class="Type">(userAuth, &quot;User Authentication&quot;, &quot;jwt to submit votes&quot;)</span>
+Lambda<span class="Type">(generateToken, &quot;User Credentials&quot;, &quot;return jwt&quot;)</span>
+Lambda<span class="Type">(recordVote, &quot;Record Vote&quot;, &quot;enter or update vote per user&quot;)</span>
+DynamoDB<span class="Type">(voteDb, &quot;Vote Database&quot;, &quot;one entry per user&quot;)</span>
+sources <span class="Identifier">--&gt;</span> userAuth
+sources <span class="Identifier">--&gt;</span> votingAPI
+userAuth <span class="Identifier">&lt;--&gt;</span> generateToken
+votingAPI <span class="Identifier">--&gt;</span> recordVote
+recordVote <span class="Identifier">--&gt;</span> voteDb
+<span class="PreProc">@enduml</span>
+</pre>

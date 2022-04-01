@@ -1,0 +1,13 @@
+<pre id='vimCodeElement'>
+<span class="PreProc">@startuml</span>
+<span class="Identifier">[-&gt;</span> A: DoWork
+<span class="Statement">activate</span> A
+A <span class="Identifier">-&gt;</span> A: Internal call
+<span class="Statement">activate</span> A
+A <span class="Identifier">-&gt;]</span><span class="Comment"> : &lt;&lt; createRequest &gt;&gt;</span>
+A<span class="Identifier">&lt;--]</span><span class="Comment"> : RequestCreated</span>
+<span class="Statement">deactivate</span> A
+<span class="Identifier">[&lt;-</span> A: Done
+<span class="Statement">deactivate</span> A
+<span class="PreProc">@enduml</span>
+</pre>

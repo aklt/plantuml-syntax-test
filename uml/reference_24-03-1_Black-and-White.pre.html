@@ -1,0 +1,30 @@
+<pre id='vimCodeElement'>
+<span class="PreProc">@startuml</span>
+
+<span class="Statement">skinparam</span> <span class="Identifier">monochrome</span> <span class="Statement">true</span>
+
+<span class="Type">actor</span> User
+<span class="Type">participant</span> <span class="Constant">&quot;First Class&quot;</span> <span class="Statement">as</span> A
+<span class="Type">participant</span> <span class="Constant">&quot;Second Class&quot;</span> <span class="Statement">as</span> B
+<span class="Type">participant</span> <span class="Constant">&quot;Last Class&quot;</span> <span class="Statement">as</span> C
+
+User <span class="Identifier">-&gt;</span> A: DoWork
+<span class="Statement">activate</span> A
+
+A <span class="Identifier">-&gt;</span> B: Create Request
+<span class="Statement">activate</span> B
+
+B <span class="Identifier">-&gt;</span> C: DoWork
+<span class="Statement">activate</span> C
+C <span class="Identifier">--&gt;</span> B: WorkDone
+<span class="Statement">destroy</span> C
+
+B <span class="Identifier">--&gt;</span> A: Request Created
+<span class="Statement">deactivate</span> B
+
+A <span class="Identifier">--&gt;</span> User: Done
+<span class="Statement">deactivate</span> A
+
+<span class="PreProc">@enduml</span>
+
+</pre>

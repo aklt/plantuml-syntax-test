@@ -1,0 +1,16 @@
+<pre id='vimCodeElement'>
+<span class="PreProc">@startuml</span>
+<span class="PreProc">!include </span><span class="Constant">&lt;aws/common&gt;</span>
+<span class="PreProc">!include </span><span class="Constant">&lt;aws/Storage/AmazonS3/AmazonS3&gt;</span>
+<span class="PreProc">!include </span><span class="Constant">&lt;aws/Storage/AmazonS3/AmazonS3_LARGE&gt;</span>
+<span class="Statement">skinparam</span> <span class="Identifier">nodeBackgroundColor</span> <span class="Constant">White</span>
+<span class="Statement">skinparam</span> <span class="Type">storage</span><span class="Type">&lt;&lt;**AmazonS3**&gt;&gt;</span> {
+  <span class="Identifier">backgroundColor</span> <span class="Constant">#F9DFDC</span>
+}
+AMAZONS3<span class="Type">(s3_internal,&quot;Default S3&quot;)</span>
+AMAZONS3<span class="Type">(s3_internal2,&quot;S3 as node&quot;,node)</span>
+AMAZONS3_LARGE<span class="Type">(s3_partner,&quot;Large S3&quot;)</span>
+s3_internal2 <span class="Identifier">&lt;</span><span class="Identifier">-r-</span> s3_partner
+s3_internal <span class="Identifier">&lt;</span><span class="Identifier">-l-</span> s3_partner
+<span class="PreProc">@enduml</span>
+</pre>

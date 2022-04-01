@@ -1,0 +1,19 @@
+<pre id='vimCodeElement'>
+<span class="PreProc">@startuml</span>
+Alice <span class="Identifier">-&gt;</span> Bob: Authentication Request
+<span class="Statement">alt</span> successful case
+  Bob <span class="Identifier">-&gt;</span> Alice: Authentication Accepted
+<span class="Statement">else</span> some kind <span class="Statement">of</span> failure
+  Bob <span class="Identifier">-&gt;</span> Alice: Authentication Failure
+  <span class="Statement">group</span> My own <span class="Type">label</span>
+    Alice <span class="Identifier">-&gt;</span> Log<span class="Comment"> : Log attack start</span>
+    <span class="Statement">loop</span> 1000 times
+      Alice <span class="Identifier">-&gt;</span> Bob: DNS Attack
+    <span class="Statement">end</span>
+    Alice <span class="Identifier">-&gt;</span> Log<span class="Comment"> : Log attack end</span>
+  <span class="Statement">end</span>
+<span class="Statement">else</span> Another type <span class="Statement">of</span> failure
+  Bob <span class="Identifier">-&gt;</span> Alice: Please <span class="Statement">repeat</span>
+<span class="Statement">end</span>
+<span class="PreProc">@enduml</span>
+</pre>

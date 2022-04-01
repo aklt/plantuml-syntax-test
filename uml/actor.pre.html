@@ -1,0 +1,39 @@
+<pre id='vimCodeElement'>
+<span class="PreProc">@startuml</span>
+
+<span class="Type">actor</span> Alice #<span class="Constant">green</span>
+
+<span class="Comment">' a comment this is</span>
+
+<span class="Type">participant</span> Bob
+<span class="Statement">box</span> <span class="Constant">&quot;Sweet deal&quot;</span>
+  <span class="Type">participant</span> <span class="Constant">&quot;Mr funky foo&quot;</span> <span class="Statement">as</span> M #EAA
+  <span class="Type">participant</span> <span class="Constant">&quot;Mr. Sleepy&quot;</span> <span class="Statement">as</span> S #AEA
+<span class="Statement">end</span> <span class="Statement">box</span>
+
+<span class="Statement">ref</span> <span class="Statement">over</span> Alice, Bob: init
+
+<span class="Comment">== Auth Plot ==</span>
+Alice <span class="Identifier">--&gt;</span> Bob: Authenticaion Request
+Bob   <span class="Identifier">--&gt;</span> Alice: Successful auth
+Bob   <span class="Identifier">--&gt;</span> M: Alice <span class="Statement">is</span> <span class="Statement">on</span>
+M     <span class="Identifier">--&gt;</span> Alice: Hello Alice, I am M
+<span class="Identifier">...</span><span class="Statement">time passes</span><span class="Identifier">...</span>
+M <span class="Identifier">--&gt;</span> S: Here <span class="Statement">is</span> some dough!
+Alice <span class="Identifier">--&gt;</span> Alice: Say, <span class="Statement">is</span> it breezy?
+<span class="Statement">activate</span> Alice
+<span class="Comment">||22||</span>
+Alice <span class="Identifier">--&gt;</span> M: Pleased <span class="Statement">to</span> meet you,\nNow about Bob...
+<span class="Comment">||22||</span>
+<span class="Statement">destroy</span> Alice
+Bob <span class="Identifier">--&gt;</span> M: Woops, Alice was destroyed
+<span class="Statement">deactivate</span> Bob
+<span class="Comment">== Revival ==</span>
+<span class="Statement">activate</span> M
+M <span class="Identifier">-&gt;]</span>: <span class="Type">&lt;&lt; createSomeFoo &gt;&gt;</span>
+M <span class="Identifier">&lt;--]</span>: DidMakeSomeFoo
+M <span class="Identifier">--&gt;o</span> Alice: Thou art revived!
+<span class="Statement">deactivate</span> M
+
+<span class="PreProc">@enduml</span>
+</pre>
