@@ -1,5 +1,5 @@
 
-function! IndentPlantUML(filePath, fileType)
+function! IndentPlantUML(filePath)
   set nocp
   syntax on
   filetype plugin indent on
@@ -8,7 +8,7 @@ function! IndentPlantUML(filePath, fileType)
   set shiftwidth=2
   set tabstop=2
   execute ":edit " . a:filePath
-  execute ":set ft=" . a:fileType
+  execute ":set ft=plantuml"
   normal gg=G
   write!
 endfun

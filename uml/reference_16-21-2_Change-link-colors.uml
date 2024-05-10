@@ -1,4 +1,4 @@
-@startuml
+@startgantt
 <style>
 ganttDiagram {
 arrow {
@@ -12,4 +12,4 @@ LineColor blue
 [Prototype design] -[#FF00FF]-> [Build prototype]
 [Prototype design] -[dotted]-> [Prepare test]
 Then [Run test]  lasts 4 days
-@enduml
+@endgantt

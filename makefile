@@ -17,18 +17,22 @@ info:
 all: build
 
 par-png: $(UML)
-	$(MAKE) -j $(nproc) $(PNG)
+	$(MAKE) $(PNG)
 
 par-svg: $(UML)
-	$(MAKE) -j $(nproc) $(SVG)
+	$(MAKE) $(SVG)
 
-build: style.css index.html par-png
+build: style.css index.html par-svg
 
 style.css: $(CSS) $(UML)
 	cat $(CSS) | sort | uniq > $@
 
-index.html: index.sh $(PRE) $(UML)
+index.orig.html: index.sh $(PRE) $(UML)
 	bash ./index.sh $(PRE) > $@
+
+index.html: index.orig.html
+	npx html-minifier-terser --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype \
+	                         --minify-urls --minify-js true --minify-css true $< > $@
 
 %.pre.html %.syntax.css: %.uml
 	bash ./tohtml.sh $< uml/$$(basename $< .uml)
