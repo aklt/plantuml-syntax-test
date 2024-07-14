@@ -6,8 +6,8 @@
 <span class="Type">actor</span> clerk
 <span class="Type">rectangle</span> checkout {
   customer <span class="Identifier">--</span> <span class="Type">(checkout)</span>
-  <span class="Type">(checkout)</span> <span class="Identifier">.&gt;</span> <span class="Type">(payment)</span><span class="Comment"> : include</span>
-  <span class="Type">(help)</span> <span class="Identifier">.&gt;</span> <span class="Type">(checkout)</span><span class="Comment"> : extends</span>
+  <span class="Type">(checkout)</span> <span class="Identifier">.&gt;</span> <span class="Type">(payment)</span> : <span class="Comment">include</span>
+  <span class="Type">(help)</span> <span class="Identifier">.&gt;</span> <span class="Type">(checkout)</span> : <span class="Comment">extends</span>
   <span class="Type">(checkout)</span> <span class="Identifier">--</span> clerk
 }
 <span class="PreProc">@enduml</span>

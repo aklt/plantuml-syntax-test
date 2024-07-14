@@ -4,14 +4,14 @@
 <span class="Type">state</span> fork1 <span class="Type">&lt;&lt;fork&gt;&gt;</span>
 <span class="Type">state</span> join2 <span class="Type">&lt;&lt;join&gt;&gt;</span>
 <span class="Type">state</span> end3 <span class="Type">&lt;&lt;end&gt;&gt;</span>
-<span class="Type">[*]</span> <span class="Identifier">--&gt;</span> choice1<span class="Comment"> : from start</span><span class="Special">\n</span><span class="Comment">to choice</span>
-choice1 <span class="Identifier">--&gt;</span> fork1<span class="Comment"> : from choice</span><span class="Special">\n</span><span class="Comment">to fork</span>
-choice1 <span class="Identifier">--&gt;</span> join2<span class="Comment"> : from choice</span><span class="Special">\n</span><span class="Comment">to join</span>
-choice1 <span class="Identifier">--&gt;</span> end3<span class="Comment"> : from choice</span><span class="Special">\n</span><span class="Comment">to end</span>
-fork1 <span class="Identifier">---&gt;</span> State1<span class="Comment"> : from fork</span><span class="Special">\n</span><span class="Comment">to state</span>
-fork1 <span class="Identifier">--&gt;</span> State2<span class="Comment"> : from fork</span><span class="Special">\n</span><span class="Comment">to state</span>
-State2 <span class="Identifier">--&gt;</span> join2<span class="Comment"> : from state</span><span class="Special">\n</span><span class="Comment">to join</span>
-State1 <span class="Identifier">--&gt;</span> <span class="Type">[*]</span><span class="Comment"> : from state</span><span class="Special">\n</span><span class="Comment">to end</span>
-join2 <span class="Identifier">--&gt;</span> <span class="Type">[*]</span><span class="Comment"> : from join</span><span class="Special">\n</span><span class="Comment">to end</span>
+<span class="Type">[*]</span> <span class="Identifier">--&gt;</span> choice1 : <span class="Comment">from start</span><span class="Special">\n</span><span class="Comment">to choice</span>
+choice1 <span class="Identifier">--&gt;</span> fork1 : <span class="Comment">from choice</span><span class="Special">\n</span><span class="Comment">to fork</span>
+choice1 <span class="Identifier">--&gt;</span> join2 : <span class="Comment">from choice</span><span class="Special">\n</span><span class="Comment">to join</span>
+choice1 <span class="Identifier">--&gt;</span> end3 : <span class="Comment">from choice</span><span class="Special">\n</span><span class="Comment">to end</span>
+fork1 <span class="Identifier">---&gt;</span> State1 : <span class="Comment">from fork</span><span class="Special">\n</span><span class="Comment">to state</span>
+fork1 <span class="Identifier">--&gt;</span> State2 : <span class="Comment">from fork</span><span class="Special">\n</span><span class="Comment">to state</span>
+State2 <span class="Identifier">--&gt;</span> join2 : <span class="Comment">from state</span><span class="Special">\n</span><span class="Comment">to join</span>
+State1 <span class="Identifier">--&gt;</span> <span class="Type">[*]</span> : <span class="Comment">from state</span><span class="Special">\n</span><span class="Comment">to end</span>
+join2 <span class="Identifier">--&gt;</span> <span class="Type">[*]</span> : <span class="Comment">from join</span><span class="Special">\n</span><span class="Comment">to end</span>
 <span class="PreProc">@enduml</span>
 </pre>

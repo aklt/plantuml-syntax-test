@@ -8,21 +8,21 @@
 <span class="Type">participant</span> <span class="Constant">&quot;Second Class&quot;</span> <span class="Statement">as</span> B
 <span class="Type">participant</span> <span class="Constant">&quot;Last Class&quot;</span> <span class="Statement">as</span> C
 
-User <span class="Identifier">-&gt;</span> A: DoWork
+User <span class="Identifier">-&gt;</span> A: <span class="Comment">DoWork</span>
 <span class="Statement">activate</span> A
 
-A <span class="Identifier">-&gt;</span> B: Create Request
+A <span class="Identifier">-&gt;</span> B: <span class="Comment">Create Request</span>
 <span class="Statement">activate</span> B
 
-B <span class="Identifier">-&gt;</span> C: DoWork
+B <span class="Identifier">-&gt;</span> C: <span class="Comment">DoWork</span>
 <span class="Statement">activate</span> C
-C <span class="Identifier">--&gt;</span> B: WorkDone
+C <span class="Identifier">--&gt;</span> B: <span class="Comment">WorkDone</span>
 <span class="Statement">destroy</span> C
 
-B <span class="Identifier">--&gt;</span> A: Request Created
+B <span class="Identifier">--&gt;</span> A: <span class="Comment">Request Created</span>
 <span class="Statement">deactivate</span> B
 
-A <span class="Identifier">--&gt;</span> User: Done
+A <span class="Identifier">--&gt;</span> User: <span class="Comment">Done</span>
 <span class="Statement">deactivate</span> A
 
 <span class="PreProc">@enduml</span>

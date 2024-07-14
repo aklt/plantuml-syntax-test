@@ -7,25 +7,25 @@ Server <span class="Statement">is</span> idle
 Client <span class="Statement">is</span> idle
 @Client
 0 <span class="Statement">is</span> send
-Client <span class="Identifier">-&gt;</span> Server@+25<span class="Comment"> : GET</span>
+Client <span class="Identifier">-&gt;</span> Server@+25 : <span class="Comment">GET</span>
 +25 <span class="Statement">is</span> await
 +75 <span class="Statement">is</span> recv
 +25 <span class="Statement">is</span> idle
 +25 <span class="Statement">is</span> send
-Client <span class="Identifier">-&gt;</span> Server@+25<span class="Comment"> : GET</span><span class="Special">\n</span><span class="Comment">If-Modified-Since: 150</span>
+Client <span class="Identifier">-&gt;</span> Server@+25 : <span class="Comment">GET</span><span class="Special">\n</span><span class="Comment">If-Modified-Since: 150</span>
 +25 <span class="Statement">is</span> await
 +50 <span class="Statement">is</span> recv
 +25 <span class="Statement">is</span> idle
-@100 <span class="Identifier">&lt;-&gt;</span> @275<span class="Comment"> : no need to re-request from server</span>
+@100 <span class="Identifier">&lt;-&gt;</span> @275 : <span class="Comment">no need to re-request from server</span>
 @Server
 25 <span class="Statement">is</span> recv
 +25 <span class="Statement">is</span> work
 +25 <span class="Statement">is</span> send
-Server <span class="Identifier">-&gt;</span> Client@+25<span class="Comment"> : 200 OK</span><span class="Special">\n</span><span class="Comment">Expires: 275</span>
+Server <span class="Identifier">-&gt;</span> Client@+25 : <span class="Comment">200 OK</span><span class="Special">\n</span><span class="Comment">Expires: 275</span>
 +25 <span class="Statement">is</span> idle
 +75 <span class="Statement">is</span> recv
 +25 <span class="Statement">is</span> send
-Server <span class="Identifier">-&gt;</span> Client@+25<span class="Comment"> : 304 Not Modified</span>
+Server <span class="Identifier">-&gt;</span> Client@+25 : <span class="Comment">304 Not Modified</span>
 +25 <span class="Statement">is</span> idle
 @Cache
 75 <span class="Statement">is</span> fresh

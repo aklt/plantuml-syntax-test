@@ -1,10 +1,10 @@
 <pre id='vimCodeElement'>
 <span class="PreProc">@startuml</span>
-Alice<span class="Identifier">-&gt;</span>Bob:m1
-Bob<span class="Identifier">-&gt;</span>Charlie:m2
-<span class="Statement">note</span> <span class="Statement">over</span> Alice, Charlie: Old method for <span class="Statement">note</span> <span class="Statement">over</span> all part. with:\n <span class="Constant">&quot;&quot;</span><span class="Statement">note</span> <span class="Statement">over</span> //FirstPart, LastPart//<span class="Constant">&quot;&quot;</span>.
-<span class="Statement">note</span> <span class="Statement">across</span>: New method with:\n<span class="Constant">&quot;&quot;</span><span class="Statement">note</span> <span class="Statement">across</span><span class="Constant">&quot;&quot;</span>
+Alice<span class="Identifier">-&gt;</span>Bob:<span class="Comment">m1</span>
+Bob<span class="Identifier">-&gt;</span>Charlie:<span class="Comment">m2</span>
+<span class="Statement">note</span> <span class="Statement">over</span> Alice, Charlie: <span class="Comment">Old method for note over all part. with:</span><span class="Special">\n</span><span class="Comment"> &quot;&quot;note over //FirstPart, LastPart//&quot;&quot;.</span>
+<span class="Statement">note</span> <span class="Statement">across</span>: <span class="Comment">New method with:</span><span class="Special">\n</span><span class="Comment">&quot;&quot;note across&quot;&quot;</span>
 Bob<span class="Identifier">-&gt;</span>Alice
-<span class="Statement">hnote</span> <span class="Statement">across</span>:Note <span class="Statement">across</span> all part.
+<span class="Statement">hnote</span> <span class="Statement">across</span>:<span class="Comment">Note across all part.</span>
 <span class="PreProc">@enduml</span>
 </pre>

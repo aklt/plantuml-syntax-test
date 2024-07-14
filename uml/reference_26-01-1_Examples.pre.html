@@ -8,21 +8,21 @@
 <span class="Type">participant</span> <span class="Constant">&quot;第二類&quot;</span> <span class="Statement">as</span> B
 <span class="Type">participant</span> <span class="Constant">&quot;最後一堂課&quot;</span> <span class="Statement">as</span> 別的東西
 
-使用者 <span class="Identifier">-&gt;</span> A: 完成這項工作
+使用者 <span class="Identifier">-&gt;</span> A: <span class="Comment">完成這項工作</span>
 <span class="Statement">activate</span> A
 
-A <span class="Identifier">-&gt;</span> B: 創建請求
+A <span class="Identifier">-&gt;</span> B: <span class="Comment">創建請求</span>
 <span class="Statement">activate</span> B
 
-B <span class="Identifier">-&gt;</span> 別的東西: 創建請求
+B <span class="Identifier">-&gt;</span> 別的東西: <span class="Comment">創建請求</span>
 <span class="Statement">activate</span> 別的東西
-別的東西 <span class="Identifier">--&gt;</span> B: 這項工作完成
+別的東西 <span class="Identifier">--&gt;</span> B: <span class="Comment">這項工作完成</span>
 <span class="Statement">destroy</span> 別的東西
 
-B <span class="Identifier">--&gt;</span> A: 請求創建
+B <span class="Identifier">--&gt;</span> A: <span class="Comment">請求創建</span>
 <span class="Statement">deactivate</span> B
 
-A <span class="Identifier">--&gt;</span> 使用者: 做完
+A <span class="Identifier">--&gt;</span> 使用者: <span class="Comment">做完</span>
 <span class="Statement">deactivate</span> A
 <span class="PreProc">@enduml</span>
 

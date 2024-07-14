@@ -1,9 +1,9 @@
+.Identifier { color: #00ffff; }
 .PreProc { color: #ff40ff; }
-.Type { color: #00ff00; }
 .Directory { color: #8080ff; }
+.Constant { color: #ff6060; }
+.Statement { color: #ffff00; }
 .MoreMsg { color: #00ff00; }
 .Special { color: #ff40ff; }
 .WarningMsg { color: #ff6060; }
-.Constant { color: #ff6060; }
-.Identifier { color: #00ffff; }
-.Statement { color: #ffff00; }
+.Type { color: #00ff00; }

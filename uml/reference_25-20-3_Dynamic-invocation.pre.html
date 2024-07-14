@@ -1,10 +1,10 @@
 <pre id='vimCodeElement'>
 <span class="PreProc">@startuml</span>
-<span class="PreProc">!function </span><span class="Constant">bold($text)</span>
+!<span class="PreProc">function</span> <span class="Statement">bold</span><span class="Type">($text)</span>
 <span class="PreProc">!return </span><span class="Constant">&quot;&lt;b&gt;&quot;+ $text +&quot;&lt;/b&gt;&quot;</span>
-<span class="PreProc">!endfunction</span>
+!<span class="PreProc">endfunction</span>
 
-Alice <span class="Identifier">-&gt;</span> Bob<span class="Comment"> : %call_user_func(&quot;bold&quot;, &quot;Hello&quot;) there</span>
+Alice <span class="Identifier">-&gt;</span> Bob : <span class="Comment">%call_user_func(&quot;bold&quot;, &quot;Hello&quot;) there</span>
 <span class="PreProc">@enduml</span>
 
 </pre>

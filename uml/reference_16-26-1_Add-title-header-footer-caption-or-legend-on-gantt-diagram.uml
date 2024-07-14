@@ -1,4 +1,4 @@
-@startuml
+@startgantt
 header some header
 footer some footer
 title My title
@@ -7,4 +7,4 @@ legend
 	The legend
 end legend
 caption This is caption
-@enduml
+@endgantt

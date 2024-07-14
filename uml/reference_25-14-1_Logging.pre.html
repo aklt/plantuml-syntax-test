@@ -1,13 +1,13 @@
 <pre id='vimCodeElement'>
 <span class="PreProc">@startuml</span>
-<span class="PreProc">!function </span><span class="Constant">bold($text)</span>
+!<span class="PreProc">function</span> <span class="Statement">bold</span><span class="Type">($text)</span>
 !$result = <span class="Constant">&quot;&lt;b&gt;&quot;</span>+ $text +<span class="Constant">&quot;&lt;/b&gt;&quot;</span>
 <span class="PreProc">!log </span><span class="Constant">Calling bold function with $text. The result is $result</span>
 <span class="PreProc">!return </span><span class="Constant">$result</span>
-<span class="PreProc">!endfunction</span>
+!<span class="PreProc">endfunction</span>
 
-Alice <span class="Identifier">-&gt;</span> Bob<span class="Comment"> : This is bold(&quot;bold&quot;)</span>
-Alice <span class="Identifier">-&gt;</span> Bob<span class="Comment"> : This is bold(&quot;a second call&quot;)</span>
+Alice <span class="Identifier">-&gt;</span> Bob : <span class="Comment">This is bold(&quot;bold&quot;)</span>
+Alice <span class="Identifier">-&gt;</span> Bob : <span class="Comment">This is bold(&quot;a second call&quot;)</span>
 <span class="PreProc">@enduml</span>
 
 </pre>

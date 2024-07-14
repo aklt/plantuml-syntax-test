@@ -4,14 +4,14 @@ scale 350 width
 <span class="Type">[*]</span> <span class="Identifier">--&gt;</span> NotShooting
 <span class="Type">state</span> NotShooting {
   <span class="Type">[*]</span> <span class="Identifier">--&gt;</span> Idle
-  Idle <span class="Identifier">--&gt;</span> Configuring<span class="Comment"> : EvConfig</span>
-  Configuring <span class="Identifier">--&gt;</span> Idle<span class="Comment"> : EvConfig</span>
+  Idle <span class="Identifier">--&gt;</span> Configuring : <span class="Comment">EvConfig</span>
+  Configuring <span class="Identifier">--&gt;</span> Idle : <span class="Comment">EvConfig</span>
 }
 <span class="Type">state</span> Configuring {
   <span class="Type">[*]</span> <span class="Identifier">--&gt;</span> NewValueSelection
-  NewValueSelection <span class="Identifier">--&gt;</span> NewValuePreview<span class="Comment"> : EvNewValue</span>
-  NewValuePreview <span class="Identifier">--&gt;</span> NewValueSelection<span class="Comment"> : EvNewValueRejected</span>
-  NewValuePreview <span class="Identifier">--&gt;</span> NewValueSelection<span class="Comment"> : EvNewValueSaved</span>
+  NewValueSelection <span class="Identifier">--&gt;</span> NewValuePreview : <span class="Comment">EvNewValue</span>
+  NewValuePreview <span class="Identifier">--&gt;</span> NewValueSelection : <span class="Comment">EvNewValueRejected</span>
+  NewValuePreview <span class="Identifier">--&gt;</span> NewValueSelection : <span class="Comment">EvNewValueSaved</span>
   <span class="Type">state</span> NewValuePreview {
     State1 <span class="Identifier">-&gt;</span> State2
   }

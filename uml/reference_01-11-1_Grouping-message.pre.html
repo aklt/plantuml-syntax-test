@@ -1,19 +1,19 @@
 <pre id='vimCodeElement'>
 <span class="PreProc">@startuml</span>
-Alice <span class="Identifier">-&gt;</span> Bob: Authentication Request
+Alice <span class="Identifier">-&gt;</span> Bob: <span class="Comment">Authentication Request</span>
 <span class="Statement">alt</span> successful case
-  Bob <span class="Identifier">-&gt;</span> Alice: Authentication Accepted
+  Bob <span class="Identifier">-&gt;</span> Alice: <span class="Comment">Authentication Accepted</span>
 <span class="Statement">else</span> some kind <span class="Statement">of</span> failure
-  Bob <span class="Identifier">-&gt;</span> Alice: Authentication Failure
+  Bob <span class="Identifier">-&gt;</span> Alice: <span class="Comment">Authentication Failure</span>
   <span class="Statement">group</span> My own <span class="Type">label</span>
-    Alice <span class="Identifier">-&gt;</span> Log<span class="Comment"> : Log attack start</span>
+    Alice <span class="Identifier">-&gt;</span> Log : <span class="Comment">Log attack start</span>
     <span class="Statement">loop</span> 1000 times
-      Alice <span class="Identifier">-&gt;</span> Bob: DNS Attack
+      Alice <span class="Identifier">-&gt;</span> Bob: <span class="Comment">DNS Attack</span>
     <span class="Statement">end</span>
-    Alice <span class="Identifier">-&gt;</span> Log<span class="Comment"> : Log attack end</span>
+    Alice <span class="Identifier">-&gt;</span> Log : <span class="Comment">Log attack end</span>
   <span class="Statement">end</span>
 <span class="Statement">else</span> Another type <span class="Statement">of</span> failure
-  Bob <span class="Identifier">-&gt;</span> Alice: Please <span class="Statement">repeat</span>
+  Bob <span class="Identifier">-&gt;</span> Alice: <span class="Comment">Please repeat</span>
 <span class="Statement">end</span>
 <span class="PreProc">@enduml</span>
 </pre>

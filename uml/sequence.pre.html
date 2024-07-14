@@ -1,25 +1,25 @@
 <pre id='vimCodeElement'>
 <span class="PreProc">@startuml</span>
 <span class="Comment">== Initialize ==</span>
-Alice<span class="Identifier">-&gt;</span>Bob<span class="Comment"> : hello</span>
-<span class="Statement">note</span> <span class="Statement">left</span>: this <span class="Statement">is</span> a <span class="Type">first</span> <span class="Statement">note</span>
-Bob<span class="Identifier">-&gt;</span>Alice<span class="Comment"> : ok</span>
-<span class="Statement">note</span> <span class="Statement">right</span>: this <span class="Statement">is</span> another <span class="Statement">note</span>
-Bob<span class="Identifier">-&gt;</span>Bob<span class="Comment"> : I am thinking</span>
+Alice<span class="Identifier">-&gt;</span>Bob : <span class="Comment">hello</span>
+<span class="Statement">note</span> <span class="Statement">left</span>: <span class="Comment">this is a first note</span>
+Bob<span class="Identifier">-&gt;</span>Alice : <span class="Comment">ok</span>
+<span class="Statement">note</span> <span class="Statement">right</span>: <span class="Comment">this is another note</span>
+Bob<span class="Identifier">-&gt;</span>Bob : <span class="Comment">I am thinking</span>
 <span class="Statement">note</span> <span class="Statement">left</span>
 <span class="Constant">  a note</span>
 <span class="Constant">  can also be defined</span>
 <span class="Constant">  on several lines</span>
 <span class="Statement">end</span> <span class="Statement">note</span>
 <span class="Comment">== Repeat ==</span>
-Alice <span class="Identifier">-&gt;</span> Bob: message 1
-Bob <span class="Identifier">--&gt;</span> Alice: ok
+Alice <span class="Identifier">-&gt;</span> Bob: <span class="Comment">message 1</span>
+Bob <span class="Identifier">--&gt;</span> Alice: <span class="Comment">ok</span>
 <span class="Comment">|||</span>
-Alice <span class="Identifier">-&gt;</span> Bob: message 2
-Bob <span class="Identifier">--&gt;</span> Alice: ok
+Alice <span class="Identifier">-&gt;</span> Bob: <span class="Comment">message 2</span>
+Bob <span class="Identifier">--&gt;</span> Alice: <span class="Comment">ok</span>
 <span class="Comment">||45||</span>
-Alice <span class="Identifier">-&gt;</span> Bob: message 3
-Bob <span class="Identifier">--&gt;</span> Alice: ok
+Alice <span class="Identifier">-&gt;</span> Bob: <span class="Comment">message 3</span>
+Bob <span class="Identifier">--&gt;</span> Alice: <span class="Comment">ok</span>
 <span class="Comment">== Get Funky ==</span>
 Bob <span class="Identifier">--&gt;x</span> Alice
 Bob <span class="Identifier">--&gt;&gt;</span> Alice
@@ -28,6 +28,6 @@ Bob <span class="Identifier">\\--</span> Alice
 Bob <span class="Identifier">--&gt;o</span> Alice
 Bob <span class="Identifier">&lt;--&gt;o</span> Alice
 Bob <span class="Identifier">&lt;--&gt;</span> Alice
-<span class="Statement">note</span> <span class="Statement">right</span>: These <span class="Statement">are</span>\nthe Funky arrows,\nYes,...
+<span class="Statement">note</span> <span class="Statement">right</span>: <span class="Comment">These are</span><span class="Special">\n</span><span class="Comment">the Funky arrows,</span><span class="Special">\n</span><span class="Comment">Yes,...</span>
 <span class="PreProc">@enduml</span>
 </pre>

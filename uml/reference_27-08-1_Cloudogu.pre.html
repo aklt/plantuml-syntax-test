@@ -19,11 +19,11 @@ TOOL_K8S<span class="Type">(k8s, Kubernetes)</span> <span class="Constant">#ffff
 
 <span class="Type">actor</span> developer
 
-developer <span class="Identifier">--&gt;</span> smeagol<span class="Comment"> : &quot;Edit Slides&quot;</span>
-smeagol <span class="Identifier">-&gt;</span> scm<span class="Comment"> : Push</span>
-scm <span class="Identifier">-&gt;</span> jenkins<span class="Comment"> : Trigger</span>
-jenkins <span class="Identifier">-&gt;</span> nexus<span class="Comment"> : Deploy</span>
-jenkins <span class="Identifier">--&gt;</span> k8s<span class="Comment"> : Deploy</span>
+developer <span class="Identifier">--&gt;</span> smeagol : <span class="Comment">&quot;Edit Slides&quot;</span>
+smeagol <span class="Identifier">-&gt;</span> scm : <span class="Comment">Push</span>
+scm <span class="Identifier">-&gt;</span> jenkins : <span class="Comment">Trigger</span>
+jenkins <span class="Identifier">-&gt;</span> nexus : <span class="Comment">Deploy</span>
+jenkins <span class="Identifier">--&gt;</span> k8s : <span class="Comment">Deploy</span>
 <span class="PreProc">@enduml</span>
 
 </pre>

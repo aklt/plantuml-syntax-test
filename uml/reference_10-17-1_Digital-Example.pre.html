@@ -7,28 +7,28 @@ binary <span class="Constant">&quot;R/W&quot;</span> <span class="Statement">as<
 binary <span class="Constant">&quot;data Valid&quot;</span> <span class="Statement">as</span> dv
 <span class="Type">concise</span> <span class="Constant">&quot;dataBus&quot;</span> <span class="Statement">as</span> db
 <span class="Type">concise</span> <span class="Constant">&quot;address bus&quot;</span> <span class="Statement">as</span> addr
-@6 <span class="Statement">as</span> :write_beg
-@10 <span class="Statement">as</span> :write_end
-@15 <span class="Statement">as</span> :read_beg
-@19 <span class="Statement">as</span> :read_end
+@6 <span class="Statement">as</span> :<span class="Comment">write_beg</span>
+@10 <span class="Statement">as</span> :<span class="Comment">write_end</span>
+@15 <span class="Statement">as</span> :<span class="Comment">read_beg</span>
+@19 <span class="Statement">as</span> :<span class="Comment">read_end</span>
 @0
 en <span class="Statement">is</span> low
 db <span class="Statement">is</span> <span class="Constant">&quot;0x0&quot;</span>
 addr <span class="Statement">is</span> <span class="Constant">&quot;0x03f&quot;</span>
 rw <span class="Statement">is</span> low
 dv <span class="Statement">is</span> 0
-@:write_beg-3
+@:<span class="Comment">write_beg-3</span>
 en <span class="Statement">is</span> high
-@:write_beg-2
+@:<span class="Comment">write_beg-2</span>
 db <span class="Statement">is</span> <span class="Constant">&quot;0xDEADBEEF&quot;</span>
-@:write_beg-1
+@:<span class="Comment">write_beg-1</span>
 dv <span class="Statement">is</span> 1
-@:write_beg
+@:<span class="Comment">write_beg</span>
 rw <span class="Statement">is</span> high
-@:write_end
+@:<span class="Comment">write_end</span>
 rw <span class="Statement">is</span> low
 dv <span class="Statement">is</span> low
-@:write_end+1
+@:<span class="Comment">write_end+1</span>
 rw <span class="Statement">is</span> low
 db <span class="Statement">is</span> <span class="Constant">&quot;0x0&quot;</span>
 addr <span class="Statement">is</span> <span class="Constant">&quot;0x23&quot;</span>
@@ -41,9 +41,9 @@ en <span class="Statement">is</span> low
 dv <span class="Statement">is</span> low
 @21
 db <span class="Statement">is</span> <span class="Constant">&quot;0x0&quot;</span>
-highlight :write_beg <span class="Statement">to</span> :write_end #<span class="Constant">Gold</span>:Write
-highlight :read_beg <span class="Statement">to</span> :read_end #<span class="Constant">lightBlue</span>:Read
-db@:write_beg-1 <span class="Identifier">&lt;-&gt;</span> @:write_end<span class="Comment"> : setup time</span>
-db@:write_beg-1 <span class="Identifier">-&gt;</span> addr@:write_end+1<span class="Comment"> : hold</span>
+highlight :<span class="Comment">write_beg to :write_end #Gold:Write</span>
+highlight :<span class="Comment">read_beg to :read_end #lightBlue:Read</span>
+db@:<span class="Comment">write_beg-1 &lt;-&gt; @:write_end : setup time</span>
+db@:<span class="Comment">write_beg-1 -&gt; addr@:write_end+1 : hold</span>
 <span class="PreProc">@enduml</span>
 </pre>

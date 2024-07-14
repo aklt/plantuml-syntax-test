@@ -1,22 +1,22 @@
 <pre id='vimCodeElement'>
 <span class="PreProc">@startuml</span>
 <span class="Type">[*]</span> <span class="Identifier">-&gt;</span> State1
-State1 <span class="Identifier">--&gt;</span> State2<span class="Comment"> : Succeeded</span>
-State1 <span class="Identifier">--&gt;</span> <span class="Type">[*]</span><span class="Comment"> : Aborted</span>
-State2 <span class="Identifier">--&gt;</span> State3<span class="Comment"> : Succeeded</span>
-State2 <span class="Identifier">--&gt;</span> <span class="Type">[*]</span><span class="Comment"> : Aborted</span>
+State1 <span class="Identifier">--&gt;</span> State2 : <span class="Comment">Succeeded</span>
+State1 <span class="Identifier">--&gt;</span> <span class="Type">[*]</span> : <span class="Comment">Aborted</span>
+State2 <span class="Identifier">--&gt;</span> State3 : <span class="Comment">Succeeded</span>
+State2 <span class="Identifier">--&gt;</span> <span class="Type">[*]</span> : <span class="Comment">Aborted</span>
 <span class="Type">state</span> State3 {
   <span class="Type">state</span> <span class="Constant">&quot;Accumulate Enough Data&quot;</span> <span class="Statement">as</span> long1
-  long1<span class="Comment"> : Just a test</span>
+  long1 : <span class="Comment">Just a test</span>
   <span class="Type">[*]</span> <span class="Identifier">--&gt;</span> long1
-  long1 <span class="Identifier">--&gt;</span> long1<span class="Comment"> : New Data</span>
-  long1 <span class="Identifier">--&gt;</span> ProcessData<span class="Comment"> : Enough Data</span>
-  State2 <span class="Identifier">--&gt;</span> <span class="Type">[H]</span>: Resume
+  long1 <span class="Identifier">--&gt;</span> long1 : <span class="Comment">New Data</span>
+  long1 <span class="Identifier">--&gt;</span> ProcessData : <span class="Comment">Enough Data</span>
+  State2 <span class="Identifier">--&gt;</span> <span class="Type">[H]</span>: <span class="Comment">Resume</span>
 }
-State3 <span class="Identifier">--&gt;</span> State2<span class="Comment"> : Pause</span>
-State2 <span class="Identifier">--&gt;</span> State3<span class="Type">[H*]</span>: DeepResume
-State3 <span class="Identifier">--&gt;</span> State3<span class="Comment"> : Failed</span>
-State3 <span class="Identifier">--&gt;</span> <span class="Type">[*]</span><span class="Comment"> : Succeeded / Save Result</span>
-State3 <span class="Identifier">--&gt;</span> <span class="Type">[*]</span><span class="Comment"> : Aborted</span>
+State3 <span class="Identifier">--&gt;</span> State2 : <span class="Comment">Pause</span>
+State2 <span class="Identifier">--&gt;</span> State3<span class="Type">[H*]</span>: <span class="Comment">DeepResume</span>
+State3 <span class="Identifier">--&gt;</span> State3 : <span class="Comment">Failed</span>
+State3 <span class="Identifier">--&gt;</span> <span class="Type">[*]</span> : <span class="Comment">Succeeded / Save Result</span>
+State3 <span class="Identifier">--&gt;</span> <span class="Type">[*]</span> : <span class="Comment">Aborted</span>
 <span class="PreProc">@enduml</span>
 </pre>

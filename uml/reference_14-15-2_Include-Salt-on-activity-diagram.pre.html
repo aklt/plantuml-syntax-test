@@ -1,13 +1,13 @@
 <pre id='vimCodeElement'>
 <span class="PreProc">@startuml</span>
-<span class="PreProc">!unquoted </span><span class="Constant">procedure SALT($x)</span>
+!<span class="PreProc">unquoted</span> <span class="PreProc">procedure</span> <span class="Identifier">SALT</span><span class="Identifier">(</span>$x<span class="Identifier">)</span>
 <span class="Constant">&quot;{{</span>
 <span class="Constant">salt</span>
 <span class="Constant">%invoke_procedure(&quot;</span>_<span class="Constant">&quot;+$x)</span>
 <span class="Constant">}}&quot;</span> <span class="Statement">as</span> $x
-<span class="PreProc">!endprocedure</span>
+!<span class="PreProc">endprocedure</span>
 
-<span class="PreProc">!procedure </span><span class="Constant">_choose()</span>
+!<span class="PreProc">procedure</span> <span class="Identifier">_choose</span><span class="Identifier">()</span>
 {+
 <span class="Identifier">&lt;b&gt;</span>an example
 choose one option
@@ -15,32 +15,32 @@ choose one option
 <span class="Type">()</span>two
 <span class="Type">[ok]</span>
 }
-<span class="PreProc">!endprocedure</span>
+!<span class="PreProc">endprocedure</span>
 
-<span class="PreProc">!procedure </span><span class="Constant">_wait()</span>
+!<span class="PreProc">procedure</span> <span class="Identifier">_wait</span><span class="Identifier">()</span>
 {+
 <span class="Identifier">&lt;b&gt;</span>please wait
 operation <span class="Statement">in</span> progress
 &lt;&amp;clock&gt;
 <span class="Type">[cancel]</span>
 }
-<span class="PreProc">!endprocedure</span>
+!<span class="PreProc">endprocedure</span>
 
-<span class="PreProc">!procedure </span><span class="Constant">_success()</span>
+!<span class="PreProc">procedure</span> <span class="Identifier">_success</span><span class="Identifier">()</span>
 {+
 <span class="Identifier">&lt;b&gt;</span>success
 congratulations!
 <span class="Type">[ok]</span>
 }
-<span class="PreProc">!endprocedure</span>
+!<span class="PreProc">endprocedure</span>
 
-<span class="PreProc">!procedure </span><span class="Constant">_error()</span>
+!<span class="PreProc">procedure</span> <span class="Identifier">_error</span><span class="Identifier">()</span>
 {+
 <span class="Identifier">&lt;b&gt;</span>error
 failed, sorry
 <span class="Type">[ok]</span>
 }
-<span class="PreProc">!endprocedure</span>
+!<span class="PreProc">endprocedure</span>
 
 <span class="Type">(*)</span> <span class="Identifier">--&gt;</span> SALT<span class="Type">(choose)</span>
 <span class="Identifier">-right-</span><span class="Identifier">&gt;</span> SALT<span class="Type">(wait)</span>

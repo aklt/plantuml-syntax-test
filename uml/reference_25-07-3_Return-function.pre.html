@@ -1,15 +1,15 @@
 <pre id='vimCodeElement'>
 <span class="PreProc">@startuml</span>
-<span class="PreProc">!function </span><span class="Constant">$dummy()</span>
+!<span class="PreProc">function</span> <span class="Identifier">$dummy</span><span class="Identifier">()</span>
 <span class="PreProc">!local </span><span class="Constant">$ijk = &quot;local&quot;</span>
 <span class="PreProc">!return </span><span class="Constant">&quot;Alice -&gt; Bob : &quot; + $ijk</span>
-<span class="PreProc">!endfunction</span>
+!<span class="PreProc">endfunction</span>
 
 !global $ijk = <span class="Constant">&quot;foo&quot;</span>
 
-Alice <span class="Identifier">-&gt;</span> Bob<span class="Comment"> : $ijk</span>
+Alice <span class="Identifier">-&gt;</span> Bob : <span class="Comment">$ijk</span>
 $dummy<span class="Type">()</span>
-Alice <span class="Identifier">-&gt;</span> Bob<span class="Comment"> : $ijk</span>
+Alice <span class="Identifier">-&gt;</span> Bob : <span class="Comment">$ijk</span>
 <span class="PreProc">@enduml</span>
 
 </pre>

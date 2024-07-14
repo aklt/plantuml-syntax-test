@@ -1,14 +1,14 @@
 <pre id='vimCodeElement'>
 <span class="PreProc">@startuml</span>
 
-<span class="PreProc">!unquoted </span><span class="Constant">procedure $element($alias, $description=&quot;&quot;, $label=&quot;&quot;, $technology=&quot;&quot;, $size=12, $colour=&quot;green&quot;)</span>
+!<span class="PreProc">unquoted</span> <span class="PreProc">procedure</span> <span class="Identifier">$element</span><span class="Identifier">(</span>$alias, $<span class="Statement">description</span>=<span class="Constant">&quot;&quot;</span>, $<span class="Type">label</span>=<span class="Constant">&quot;&quot;</span>, $<span class="Constant">technology</span>=<span class="Constant">&quot;&quot;</span>, $size=12, $colour=<span class="Constant">&quot;green&quot;</span><span class="Identifier">)</span>
 <span class="Type">rectangle</span> $alias <span class="Statement">as</span> <span class="Constant">&quot;</span>
 <span class="Constant">&lt;color:$colour&gt;&lt;&lt;$alias&gt;&gt;&lt;/color&gt;</span>
 <span class="Constant">==$label==</span>
 <span class="Constant">//&lt;size:$size&gt;[$technology]&lt;/size&gt;//</span>
 
 <span class="Constant">$description&quot;</span>
-<span class="PreProc">!endprocedure</span>
+!<span class="PreProc">endprocedure</span>
 
 $element<span class="Type">(myalias, &quot;This description is %newline()</span><span class="Statement">on</span> several lines<span class="Constant">&quot;, $size=10, $technology=&quot;</span>Java<span class="Constant">&quot;)</span>
 <span class="Constant">@enduml</span>
