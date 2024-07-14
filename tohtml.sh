@@ -2,11 +2,11 @@
 
 #
 # Configure colorscheme and where to source plantuml-syntax/syntax/plantuml.vim
-# from 
+# from
 #
 # colors="\$VIMRUNTIME/colors/default.vim"
 # colors="${HOME}/.vim/bundle/gruvbox/colors/gruvbox.vim"
- 
+
 tools="tohtml.vim"
 
 if [ -z "$1" ] || [ -z "$2" ]; then
@@ -21,6 +21,12 @@ if ! [ -e "$toHtml" ]; then
 fi
 if ! [ -e "$toHtml" ]; then
   toHtml="/usr/share/vim/vim90/syntax/2html.vim"
+fi
+if ! [ -e "$toHtml" ]; then
+  toHtml="$HOME/install/share/vim/vim82/syntax/2html.vim"
+fi
+if ! [ -e "$toHtml" ]; then
+  toHtml="/usr/share/vim/vim82/syntax/2html.vim"
 fi
 if ! [ -e "$toHtml" ]; then
   echo "Cannot find 2html.vim script, set VIM_TO_HTML variable"
