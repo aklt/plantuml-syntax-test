@@ -1,4 +1,4 @@
-@startuml
+@startgantt
 [Task1] lasts 20 days
 note bottom
 	memo1 ...
@@ -11,4 +11,4 @@ end note
 -- Separator title --
 [M1] happens on 5 days after [Task1]'s end
 -- end --
-@enduml
+@endgantt
