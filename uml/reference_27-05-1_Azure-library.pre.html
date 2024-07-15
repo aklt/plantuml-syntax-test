@@ -2,7 +2,7 @@
 <span class="PreProc">@startuml</span>
 <span class="PreProc">!include </span><span class="Constant">&lt;azure/AzureCommon&gt;</span>
 <span class="PreProc">!include </span><span class="Constant">&lt;azure/Analytics/AzureEventHub&gt;</span>
-<span class="PreProc">!include </span><span class="Constant">&lt;azure/Analytics/AzureStreamAnalytics&gt;</span>
+<span class="PreProc">!include </span><span class="Constant">&lt;azure/Analytics/AzureStreamAnalyticsJob&gt;</span>
 <span class="PreProc">!include </span><span class="Constant">&lt;azure/Databases/AzureCosmosDb&gt;</span>
 
 <span class="Statement">left</span> <span class="Statement">to</span> <span class="Statement">right</span> direction
@@ -11,7 +11,7 @@
 
 AzureEventHub<span class="Type">(fareDataEventHub, &quot;Fare Data&quot;, &quot;PK: Medallion HackLicense VendorId; 3 TUs&quot;)</span>
 AzureEventHub<span class="Type">(tripDataEventHub, &quot;Trip Data&quot;, &quot;PK: Medallion HackLicense VendorId; 3 TUs&quot;)</span>
-AzureStreamAnalytics<span class="Type">(streamAnalytics, &quot;Stream Processing&quot;, &quot;6 SUs&quot;)</span>
+AzureStreamAnalyticsJob<span class="Type">(streamAnalytics, &quot;Stream Processing&quot;, &quot;6 SUs&quot;)</span>
 AzureCosmosDb<span class="Type">(outputCosmosDb, &quot;Output Database&quot;, &quot;1,000 RUs&quot;)</span>
 
 devices <span class="Identifier">--&gt;</span> fareDataEventHub
@@ -20,5 +20,4 @@ fareDataEventHub <span class="Identifier">--&gt;</span> streamAnalytics
 tripDataEventHub <span class="Identifier">--&gt;</span> streamAnalytics
 streamAnalytics <span class="Identifier">--&gt;</span> outputCosmosDb
 <span class="PreProc">@enduml</span>
-
 </pre>

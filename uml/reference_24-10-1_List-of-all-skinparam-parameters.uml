@@ -1,4 +1,4 @@
 @startuml
-help skinparams
+skinparameters
 @enduml
 
