@@ -22,7 +22,7 @@ par-png: $(UML)
 par-svg: $(UML)
 	$(MAKE) $(SVG)
 
-build: style.css index.html par-svg
+build: style.css par-svg index.html
 
 style.css: $(CSS) $(UML)
 	cat $(CSS) | sort | uniq > $@
