@@ -42,7 +42,7 @@ vim --noplugin -u NONE \
   -c ":set nocp" \
   -c ":source ${tools}" \
   -c ":set bg=light" \
-  -c ":colorscheme wildcharm" \
+  -c ":colorscheme default" \
   -c ":call IndentPlantUML('$1')" \
   -c ":let g:loaded_2html_plugin = 0" \
   -c ":source $toHtml" \
