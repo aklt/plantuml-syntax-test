@@ -1,5 +1,0 @@
-@startuml
-interface interface1
-() "interface2"
-label "//interface example//"
-@enduml

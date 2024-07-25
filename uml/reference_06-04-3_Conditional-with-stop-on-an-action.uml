@@ -1,7 +1,0 @@
-@startuml
-if (condition?) then
-	#pink:error;
-	detach
-endif
-#palegreen:action;
-@enduml

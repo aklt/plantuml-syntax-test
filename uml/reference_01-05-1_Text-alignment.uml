@@ -1,5 +1,0 @@
-@startuml
-skinparam responseMessageBelowArrow true
-Bob -> Alice : hello
-Alice -> Bob : ok
-@enduml

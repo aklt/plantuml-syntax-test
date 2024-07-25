@@ -1,9 +1,0 @@
-@startuml
-
-!define osaPuml https://raw.githubusercontent.com/Crashedmind/PlantUML-opensecurityarchitecture2-icons/master
-!include osaPuml/Common.puml
-!include osaPuml/User/all.puml
-
-listsprites
-@enduml
-

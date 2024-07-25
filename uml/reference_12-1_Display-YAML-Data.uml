@@ -1,5 +1,0 @@
-@startyaml
-fruit: Apple
-size: Large
-color: Red
-@endyaml

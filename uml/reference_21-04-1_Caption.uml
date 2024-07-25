@@ -1,4 +1,0 @@
-@startuml
-caption figure 1
-Alice -> Bob: Hello
-@enduml

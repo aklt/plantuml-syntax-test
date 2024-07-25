@@ -1,5 +1,0 @@
-@startuml
-Alice -> Bob : Hello
-!assert %strpos("abcdef", "cd")==3 : "This always fails"
-@enduml
-

@@ -1,8 +1,0 @@
-@startsalt
-{#
-. | Column 2 | Column 3
-Row header 1 | value 1 | value 2
-Row header 2 | A long cell | *
-}
-@endsalt
-

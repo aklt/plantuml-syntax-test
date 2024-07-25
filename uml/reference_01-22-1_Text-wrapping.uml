@@ -1,7 +1,0 @@
-@startuml
-skinparam maxMessageSize 50
-participant a
-participant b
-a -> b : this\nis\nmanually\ndone
-a -> b : this is a very long message on several words
-@enduml

@@ -1,6 +1,0 @@
-@startuml
-usecase direct as "this is ∞ long"
-usecase ampHash as "this is also &#8734; long"
-usecase angleBrackets as "this is also <U+221E> long"
-@enduml
-

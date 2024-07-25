@@ -1,7 +1,0 @@
-@startgantt
-' This is a comment
-[T1] lasts 3 days
-/' this comment
-is on several lines '/
-[T2] starts at [T1]'s end and lasts 1 day
-@endgantt

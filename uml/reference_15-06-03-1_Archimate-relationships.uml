@@ -1,7 +1,0 @@
-@startuml
-!include <archimate/Archimate>
-Motivation_Stakeholder(StakeholderElement, "Stakeholder Description")
-Business_Service(BService, "Business Service")
-Rel_Composition(StakeholderElement, BService, "Description for the relationship")
-@enduml
-

@@ -1,5 +1,0 @@
-@startuml
-!include <archimate/Archimate>
-Motivation_Stakeholder(StakeholderElement, "Stakeholder Description")
-@enduml
-

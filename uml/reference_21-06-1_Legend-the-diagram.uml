@@ -1,7 +1,0 @@
-@startuml
-Alice -> Bob : Hello
-legend right
-	Short
-	legend
-	endlegend
-@enduml

@@ -1,4 +1,0 @@
-@startuml
-(*) --> "First Action"
-"First Action" --> (*)
-@enduml
