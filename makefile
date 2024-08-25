@@ -31,7 +31,7 @@ index.orig.html: index.sh $(PRE) $(UML)
 	bash ./index.sh $(PRE) > $@
 
 index.html: index.orig.html
-	npx html-minifier-terser --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype \
+	pnpx html-minifier-terser --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype \
 	                         --minify-urls --minify-js true --minify-css true $< > $@
 
 %.pre.html %.syntax.css: %.uml

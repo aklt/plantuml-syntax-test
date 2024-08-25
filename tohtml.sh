@@ -17,16 +17,15 @@ fi
 
 toHtml="$VIM_TO_HTML"
 if ! [ -e "$toHtml" ]; then
-  toHtml="$HOME/install/share/vim/vim90/syntax/2html.vim"
-fi
-if ! [ -e "$toHtml" ]; then
-  toHtml="/usr/share/vim/vim90/syntax/2html.vim"
-fi
-if ! [ -e "$toHtml" ]; then
-  toHtml="$HOME/install/share/vim/vim82/syntax/2html.vim"
-fi
-if ! [ -e "$toHtml" ]; then
-  toHtml="/usr/share/vim/vim82/syntax/2html.vim"
+  for ver in 91 90 82 81; do
+    toHtml="$HOME/install/share/vim/vim$ver/syntax/2html.vim"
+    if ! [ -e "$toHtml" ]; then
+      toHtml="/usr/share/vim/vim$ver/syntax/2html.vim"
+    fi
+    if [ -e "$toHtml" ]; then
+      break
+    fi
+  done
 fi
 if ! [ -e "$toHtml" ]; then
   echo "Cannot find 2html.vim script, set VIM_TO_HTML variable"
